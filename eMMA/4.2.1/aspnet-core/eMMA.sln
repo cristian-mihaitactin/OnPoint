@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.Web.Core", "src\eMMA.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.Web.Mvc", "src\eMMA.Web.Mvc\eMMA.Web.Mvc.csproj", "{A2213374-BB48-48FD-BBD4-81E6A961D866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMMA.EntityFrameworkCore", "src\eMMA.EntityFrameworkCore\eMMA.EntityFrameworkCore.csproj", "{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.EntityFrameworkCore", "src\eMMA.EntityFrameworkCore\eMMA.EntityFrameworkCore.csproj", "{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.Entities", "src\eMMA.Entities\eMMA.Entities.csproj", "{54247D6A-DE8B-44A5-88F5-4A17E886ACB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54247D6A-DE8B-44A5-88F5-4A17E886ACB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54247D6A-DE8B-44A5-88F5-4A17E886ACB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54247D6A-DE8B-44A5-88F5-4A17E886ACB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54247D6A-DE8B-44A5-88F5-4A17E886ACB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +80,8 @@ Global
 		{22CFE0D2-8DCA-42D7-AD7D-784C3862493F} = {AFAA0841-BD93-466F-B8F4-FB4EEC86F1FC}
 		{A2213374-BB48-48FD-BBD4-81E6A961D866} = {AFAA0841-BD93-466F-B8F4-FB4EEC86F1FC}
 		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F} = {AFAA0841-BD93-466F-B8F4-FB4EEC86F1FC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5812F99-6F58-4770-B761-C93EEDD0D02A}
 	EndGlobalSection
 EndGlobal
