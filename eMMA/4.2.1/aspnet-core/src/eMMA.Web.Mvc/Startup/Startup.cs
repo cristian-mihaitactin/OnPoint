@@ -13,7 +13,7 @@ using eMMA.Configuration;
 using eMMA.Identity;
 using eMMA.Web.Resources;
 using Abp.AspNetCore.SignalR.Hubs;
-
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace eMMA.Web.Startup
 {
@@ -39,6 +39,12 @@ namespace eMMA.Web.Startup
             services.AddScoped<IWebResourceManager, WebResourceManager>();
 
             services.AddSignalR();
+
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "eMMA API", Version = "v1" });
+            });
 
             // Configure Abp and Dependency Injection
             return services.AddAbp<eMMAWebMvcModule>(
@@ -71,6 +77,16 @@ namespace eMMA.Web.Startup
             app.UseSignalR(routes =>
             {
                 routes.MapHub<AbpCommonHub>("/signalr");
+            });
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
 
             app.UseMvc(routes =>
