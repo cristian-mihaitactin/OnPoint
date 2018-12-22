@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataLayer
+namespace DataLayer.Models
 {
-    public class Professor
+    public class Professor : User
     {
         public Professor()
         {

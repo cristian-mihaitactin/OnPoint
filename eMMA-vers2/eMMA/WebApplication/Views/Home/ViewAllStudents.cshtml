@@ -1,0 +1,11 @@
+﻿@model StudentsViewModel
+
+<h2>@Model.Title</h2>
+@foreach (var student in Model.Students)
+{
+    <div>            
+        <h3>Nr. matricol: @student.NrMatricol</h3>
+        <p>Nume: @student.FirstName @student.LastName</p>
+        <p>Email: @student.Email</p>
+    </div>
+}

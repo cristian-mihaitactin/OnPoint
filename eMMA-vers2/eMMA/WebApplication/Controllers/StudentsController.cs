@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using BusinessLayer;
 using DataLayer;
 using Microsoft.EntityFrameworkCore;
+using DataLayer.Models;
+using BusinessLayer.Repositories;
 
 namespace WebApplication.Controllers
 {
@@ -14,24 +16,18 @@ namespace WebApplication.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
-        private readonly IStudentRepository _repository;
+        private readonly IRepository<Student> _repository;
 
-        public StudentsController(IStudentRepository repository)
+        public StudentsController(IRepository<Student> repository)
         {
             _repository = repository;
-
-            if (_repository.GetAll().Count() == 0)
-            {
-                // Create a new Student if collection is empty.
-                _repository.Create(new Student(1, "2", "popescu.ion", "pass", "Ion", "Popescu", "popescu@mail.com"));
-            }
         }
 
         // GET: api/student
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
+        public Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
-            return await _repository.GetAllAsync();
+            return _repository.GetAll();
         }
 
         // GET: api/students/1
@@ -47,14 +43,5 @@ namespace WebApplication.Controllers
 
             return student;
         }
-
-//        // POST: api/Todo
-//        [HttpPost]
-//        public async Task<ActionResult<Student>> PostStudent(Student student)
-//        {
-//            _repository.Create(student);
-//
-//            return CreatedAtAction("GetStudent", new { id = student.Id }, student);
-//        }
     }
 }

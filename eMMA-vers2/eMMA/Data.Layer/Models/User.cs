@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DataLayer
+namespace DataLayer.Models
 {
     public abstract class User
     {
