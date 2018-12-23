@@ -19,6 +19,8 @@ namespace DataLayer.Models
         public ICollection<LaboratoryInstance> Labs {get;set;}
         public ICollection<SeminarInstance> Seminars {get;set;}
         public ICollection<CourseInstance> Courses {get;set;}
+        
+
         public Object(){}      
 
     }

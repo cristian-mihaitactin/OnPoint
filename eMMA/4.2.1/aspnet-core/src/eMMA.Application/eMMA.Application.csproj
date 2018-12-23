@@ -11,6 +11,9 @@
     <RootNamespace>eMMA</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\eMMA.Core\eMMA.Core.csproj" />
   </ItemGroup>
 </Project>

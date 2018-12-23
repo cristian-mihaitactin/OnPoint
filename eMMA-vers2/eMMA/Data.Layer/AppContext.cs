@@ -8,6 +8,8 @@ namespace DataLayer
         public DbSet<Student> Students { get; private set; }
         public DbSet<Professor> Professors { get; private set; }
         public DbSet<Object> Objects {get; private set;}
+        public DbSet<Question> Questions {get; private set;}
+        public DbSet<Answer> Answers {get; private set;}
 
         public AppContext(DbContextOptions<AppContext> options) : base(options)
         {

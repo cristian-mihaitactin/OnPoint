@@ -14,34 +14,34 @@ namespace WebApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ObjectsController : ControllerBase
+    public class AnswersController : ControllerBase
     {
-        private readonly IRepository<Object> _repository;
+        private readonly IRepository<Answer> _repository;
 
-        public ObjectsController(IRepository<Object> repository)
+        public AnswersController(IRepository<Answer> repository)
         {
             _repository = repository;
         }
 
         // GET: api/student
         [HttpGet]
-        public Task<ActionResult<IEnumerable<Object>>> GetObjects()
+        public Task<ActionResult<IEnumerable<Answer>>> GetAnswers()
         {
             return _repository.GetAll();
         }
 
         // GET: api/objects/1
         [HttpGet("{id}")]
-        public async Task<ActionResult<Object>> GetObject(int id)
+        public async Task<ActionResult<Answer>> GetAnswer(int id)
         {
-            var obj = await _repository.GetById(id);
+            var answer = await _repository.GetById(id);
 
-            if (obj == null)
+            if (answer == null)
             {
                 return BadRequest();
             }
 
-            return obj;
+            return answer;
         }
     }
 }
