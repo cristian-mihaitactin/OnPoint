@@ -2,46 +2,60 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using BusinessLayer;
-using DataLayer;
-using Microsoft.EntityFrameworkCore;
-using DataLayer.Models;
 using BusinessLayer.Repositories;
+using DataLayer.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class StudentsController : ControllerBase
+    public class StudentsController : Controller
     {
-        private readonly IRepository<Student> _repository;
+        private readonly IRepository<Student> _studentRepository;
 
-        public StudentsController(IRepository<Student> repository)
+        public StudentsController(IRepository<Student> studentRepository)
         {
-            _repository = repository;
+            _studentRepository = studentRepository;
         }
 
-        // GET: api/student
-        [HttpGet]
-        public Task<ActionResult<IEnumerable<Student>>> GetStudents()
+        public IActionResult Index()
         {
-            return _repository.GetAll();
+            var allStudents = _studentRepository.GetAll().ToList();
+            return View(allStudents);
         }
 
-        // GET: api/students/1
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Student>> GetStudent(int id)
+        public IActionResult Create(Student student)
         {
-            var student = await _repository.GetById(id);
-
-            if (student == null)
+            if (student.Id != 0)
             {
-                return BadRequest();
+                student.Id = 0;
+                _studentRepository.Add(student);
+                _studentRepository.Save();
+                return RedirectToAction("Index");
             }
+            else
+            {
+                return View();
+            }
+        }
 
-            return student;
+        public IActionResult Details(int? id)
+        {
+            var student = _studentRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            return View(student);
+        }
+
+        public IActionResult Edit(int? id)
+        {
+            var student = _studentRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            return View(student);
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            var student = _studentRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            _studentRepository.Delete(student);
+            _studentRepository.Save();
+            return RedirectToAction("Index");
         }
     }
 }

@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\StudentsController.cs" />
     <Compile Remove="Controllers\ValuesController.cs" />
+    <Compile Remove="ViewModels\StudentsViewModel.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +26,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Data.Business\BusinessLayer.csproj" />
     <ProjectReference Include="..\Data.Layer\DataLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Professors\" />
   </ItemGroup>
 
 </Project>
