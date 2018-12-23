@@ -11,7 +11,15 @@ namespace DataLayer.Models
         Seminar
     }
 
-    public class Object
+    public class Object : IObject
     {
+        public Guid Id {private set; get;}
+        public string Title {get; set;}
+        public int Credits {get; private set;}
+        public ICollection<LaboratoryInstance> Labs {get;set;}
+        public ICollection<SeminarInstance> Seminars {get;set;}
+        public ICollection<CourseInstance> Courses {get;set;}
+        public Object(){}      
+
     }
 }
