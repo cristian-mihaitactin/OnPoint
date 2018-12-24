@@ -23,18 +23,18 @@ namespace WebApplication.Controllers
             _repository = repository;
         }
 
-        // GET: api/student
+        // GET: api/uniclass
         [HttpGet]
-        public Task<ActionResult<IEnumerable<UniClass>>> GetUniClasses()
+        public ActionResult<IEnumerable<UniClass>> GetUniClasses()
         {
-            return _repository.GetAll();
+            return Ok(_repository.GetAll());
         }
 
         // GET: api/UniClasss/1
         [HttpGet("{id}")]
         public async Task<ActionResult<UniClass>> GetUniClass(int id)
         {
-            var obj = await _repository.GetById(id);
+            var obj = _repository.GetSingle(id);
 
             if (obj == null)
             {

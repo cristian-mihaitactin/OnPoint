@@ -13,15 +13,20 @@ namespace DataLayer.Models
 
     public class UniClass : IUniClass
     {
-        public Guid Id {private set; get;}
+        public int Id {private set; get;}
         public string Title {get; set;}
         public int Credits {get; private set;}
-        public ICollection<LaboratoryInstance> Labs {get;set;}
-        public ICollection<SeminarInstance> Seminars {get;set;}
-        public ICollection<CourseInstance> Courses {get;set;}
+        //public ICollection<LaboratoryInstance> Labs {get;set;}
+        //public ICollection<SeminarInstance> Seminars {get;set;}
+        //public ICollection<CourseInstance> Courses {get;set;}
         
 
-        public UniClass(){}      
-
+        public UniClass(){}
+        public UniClass(int id, string title,int credits)
+        {
+            Id = id;
+            Title = title;
+            Credits = credits;
+        }
     }
 }

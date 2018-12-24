@@ -25,16 +25,16 @@ namespace WebApplication.Controllers
 
         // GET: api/student
         [HttpGet]
-        public Task<ActionResult<IEnumerable<Answer>>> GetAnswers()
+        public ActionResult<IEnumerable<Answer>> GetAnswers()
         {
-            return _repository.GetAll();
+            return Ok(_repository.GetAll());
         }
 
         // GET: api/objects/1
         [HttpGet("{id}")]
         public async Task<ActionResult<Answer>> GetAnswer(int id)
         {
-            var answer = await _repository.GetById(id);
+            var answer = _repository.GetSingle(id);
 
             if (answer == null)
             {

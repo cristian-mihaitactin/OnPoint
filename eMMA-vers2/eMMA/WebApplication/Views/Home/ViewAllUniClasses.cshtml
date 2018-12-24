@@ -1,0 +1,10 @@
+﻿@model UniClassesViewModel
+
+<h2>@Model.Title</h2>
+@foreach (var uniclass in Model.UniClasses)
+{
+    <div>
+        <h3>Titlu: @uniclass.Title</h3>
+        <p>Credite: @uniclass.Credits</p>
+    </div>
+}
