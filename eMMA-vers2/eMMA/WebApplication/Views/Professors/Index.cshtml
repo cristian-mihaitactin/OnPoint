@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Professor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-controller="Professors" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var professor in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => professor.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => professor.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => professor.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => professor.Email)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=professor.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = professor.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = professor.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
