@@ -14,25 +14,25 @@ namespace WebApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ObjectsController : ControllerBase
+    public class UniClassesController : ControllerBase
     {
-        private readonly IRepository<Object> _repository;
+        private readonly IRepository<UniClass> _repository;
 
-        public ObjectsController(IRepository<Object> repository)
+        public UniClassesController(IRepository<UniClass> repository)
         {
             _repository = repository;
         }
 
         // GET: api/student
         [HttpGet]
-        public Task<ActionResult<IEnumerable<Object>>> GetObjects()
+        public Task<ActionResult<IEnumerable<UniClass>>> GetUniClasses()
         {
             return _repository.GetAll();
         }
 
-        // GET: api/objects/1
+        // GET: api/UniClasss/1
         [HttpGet("{id}")]
-        public async Task<ActionResult<Object>> GetObject(int id)
+        public async Task<ActionResult<UniClass>> GetUniClass(int id)
         {
             var obj = await _repository.GetById(id);
 

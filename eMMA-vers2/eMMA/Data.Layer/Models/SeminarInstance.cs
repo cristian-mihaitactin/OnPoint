@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataLayer.Models
 {
-    public class SeminarInstance : IObject, IPractical
+    public class SeminarInstance : IUniClass, IPractical
     {
         public DateTime Date { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int Number { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

@@ -6,43 +6,43 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLayer.Repositories
 {
-    public class ObjectRepository : IRepository<DataLayer.Models.Object>
+    public class UniClassRepository : IRepository<DataLayer.Models.UniClass>
     {
         private readonly DataLayer.AppContext _context;
 
-        public ObjectRepository(DataLayer.AppContext context)
+        public UniClassRepository(DataLayer.AppContext context)
         {
             _context = context;
         }
 
-        public void Add(DataLayer.Models.Object entity)
+        public void Add(DataLayer.Models.UniClass entity)
         {
-            _context.Objects.Add(entity);
+            _context.UniClasses.Add(entity);
         }
 
-        public void Delete(DataLayer.Models.Object entity)
+        public void Delete(DataLayer.Models.UniClass entity)
         {
-            _context.Objects.Remove(entity);
+            _context.UniClasses.Remove(entity);
         }
 
-        public void Edit(DataLayer.Models.Object entity)
+        public void Edit(DataLayer.Models.UniClass entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
         }
 
-        public IQueryable<DataLayer.Models.Object> FindBy(Expression<Func<DataLayer.Models.Object, bool>> predicate)
+        public IQueryable<DataLayer.Models.UniClass> FindBy(Expression<Func<DataLayer.Models.UniClass, bool>> predicate)
         {
-            return _context.Objects.Where(predicate);
+            return _context.UniClasses.Where(predicate);
         }
 
-        public IQueryable<DataLayer.Models.Object> GetAll()
+        public IQueryable<DataLayer.Models.UniClass> GetAll()
         {
-            return _context.Objects;
+            return _context.UniClasses;
         }
 
-        public DataLayer.Models.Object GetSingle(int objectId)
+        public DataLayer.Models.UniClass GetSingle(int UniClassId)
         {
-            return _context.Objects.Find(objectId);
+            return _context.UniClasses.Find(UniClassId);
         }
 
         public void Save()

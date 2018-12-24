@@ -11,7 +11,7 @@ namespace DataLayer.Models
         Seminar
     }
 
-    public class Object : IObject
+    public class UniClass : IUniClass
     {
         public Guid Id {private set; get;}
         public string Title {get; set;}
@@ -21,7 +21,7 @@ namespace DataLayer.Models
         public ICollection<CourseInstance> Courses {get;set;}
         
 
-        public Object(){}      
+        public UniClass(){}      
 
     }
 }

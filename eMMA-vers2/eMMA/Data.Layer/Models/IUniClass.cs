@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataLayer.Models
 {
-    public abstract class IObject
+    public abstract class IUniClass
     {
         DateTime Date { get; set; }
         int Number { get; set; }
