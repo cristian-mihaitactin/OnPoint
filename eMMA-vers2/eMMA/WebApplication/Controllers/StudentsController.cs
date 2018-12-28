@@ -23,19 +23,16 @@ namespace WebApplication.Controllers
             return View(allStudents);
         }
 
-        public IActionResult Create(Student student)
+        public IActionResult Create()
         {
-            if (student.Id != 0)
-            {
-                student.Id = 0;
-                _studentRepository.Add(student);
-                _studentRepository.Save();
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                return View();
-            }
+            return View();
+        }
+
+        public IActionResult CreateSave(Student student)
+        {
+            _studentRepository.Add(student);
+            _studentRepository.Save();
+            return RedirectToAction("Index");
         }
 
         public IActionResult Details(int? id)
@@ -48,6 +45,14 @@ namespace WebApplication.Controllers
         {
             var student = _studentRepository.FindBy(s => s.Id == id).FirstOrDefault();
             return View(student);
+        }
+
+        public IActionResult EditSave(Student student)
+        {
+//            var student = _studentRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            _studentRepository.Edit(student);
+            _studentRepository.Save();
+            return RedirectToAction("Index");
         }
 
         public IActionResult Delete(int? id)
