@@ -35,13 +35,13 @@ namespace WebApplication.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Details(int? id)
+        public IActionResult Details(Guid? id)
         {
             var professor = _professorRepository.FindBy(s => s.Id == id).FirstOrDefault();
             return View(professor);
         }
 
-        public IActionResult Edit(int? id)
+        public IActionResult Edit(Guid? id)
         {
             var professor = _professorRepository.FindBy(s => s.Id == id).FirstOrDefault();
             return View(professor);
@@ -54,7 +54,7 @@ namespace WebApplication.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Delete(int? id)
+        public IActionResult Delete(Guid? id)
         {
             var student = _professorRepository.FindBy(s => s.Id == id).FirstOrDefault();
             _professorRepository.Delete(student);

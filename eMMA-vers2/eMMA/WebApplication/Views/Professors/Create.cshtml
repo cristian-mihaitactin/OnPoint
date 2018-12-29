@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="CreateSave">
-            <input asp-for="Id" type="hidden"/>
+            @* <input asp-for="Id" type="hidden"/> *@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Username" class="control-label"></label>
