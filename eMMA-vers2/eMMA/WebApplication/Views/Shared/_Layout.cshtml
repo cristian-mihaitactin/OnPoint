@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="~/content/site.css" />
-    <title>@Model.Title</title>
+    <title>@ViewData["Title"]</title>
 </head>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a asp-controller="Home" asp-action="Index" class="navbar-brand">Home</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Students" asp-action="Index" class="navbar-brand">Students</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Professors" asp-action="Index" class="navbar-brand">Professors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div>
         @RenderBody()
     </div>
