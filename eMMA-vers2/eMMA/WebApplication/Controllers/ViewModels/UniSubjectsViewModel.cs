@@ -6,9 +6,9 @@ using System.Text;
 
 namespace WebApplication.ViewModels
 {
-    public class UniClassesViewModel
+    public class UniSubjectsViewModel
     {
         public string Title { get; set; }
-        public List<UniClass> UniClasses { get; set; }
+        public List<UniSubject> UniSubjects { get; set; }
     }
 }

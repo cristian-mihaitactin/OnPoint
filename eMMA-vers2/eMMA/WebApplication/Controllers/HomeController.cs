@@ -12,11 +12,11 @@ namespace WebApplication.Controllers
     public class HomeController : Controller
     {
         private readonly IRepository<Student> _studentRepository;
-        private readonly IRepository<UniClass> _uniClassRepository;
+        private readonly IRepository<UniSubject> _uniSubjectRepository;
 
-        public HomeController(IRepository<UniClass> uniClassRepository)
+        public HomeController(IRepository<UniSubject> uniSubjectRepository)
         {
-            _uniClassRepository = uniClassRepository;
+            _uniSubjectRepository = uniSubjectRepository;
         }
 
         public IActionResult ViewAllStudents()
@@ -29,10 +29,10 @@ namespace WebApplication.Controllers
         
         public IActionResult ViewAllUniClasses()
         {
-            var uniClasses = _uniClassRepository.GetAll();
-            var uniClassesViewModel = new UniClassesViewModel() { Title = "Mate", UniClasses = uniClasses.ToList() };
+            var uniSubjects = _uniSubjectRepository.GetAll();
+            var uniSubjectsViewModel = new UniSubjectsViewModel() { Title = "Mate", UniSubjects = uniSubjects.ToList() };
 
-            return View(uniClassesViewModel);
+            return View(uniSubjectsViewModel);
         }
     }
 }

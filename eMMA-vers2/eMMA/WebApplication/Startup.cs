@@ -34,7 +34,7 @@ namespace WebApplication
 
             services.AddTransient<IRepository<Student>, StudentRepository>();
             services.AddTransient<IRepository<Professor>, ProfessorRepository>();
-            services.AddTransient<IRepository<UniClass>, UniClassRepository>();
+            services.AddTransient<IRepository<UniSubject>, UniSubjectRepository>();
             services.AddMvc();//.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

@@ -6,6 +6,7 @@ namespace DataLayer.Models
 {
     public class LaboratoryInstance : IUniClass, IPractical
     {
+        public Guid IdLab { get; private set; }
         public DateTime Date { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int Number { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public ICollection<Student> AttendingList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
