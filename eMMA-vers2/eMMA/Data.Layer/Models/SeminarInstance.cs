@@ -4,8 +4,9 @@ using System.Text;
 
 namespace DataLayer.Models
 {
-    class SeminarInstance : IObject, IPractical
+    public class SeminarInstance : IUniClass, IPractical
     {
+        public Guid IdSeminar { get; private set; }
         public DateTime Date { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int Number { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public ICollection<Student> AttendingList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer.Repositories;
+using WebApplication.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using DataLayer.Models;
 
@@ -10,9 +11,28 @@ namespace WebApplication.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IRepository<Student> _studentRepository;
+        private readonly IRepository<UniSubject> _uniSubjectRepository;
+
+        public HomeController(IRepository<UniSubject> uniSubjectRepository)
         {
-            return View();
+            _uniSubjectRepository = uniSubjectRepository;
+        }
+
+        public IActionResult ViewAllStudents()
+        {
+            var students = _studentRepository.GetAll();
+            var studentsViewModel = new StudentsViewModel() { Title = "Yeees", Students = students.ToList() };
+
+            return View(studentsViewModel);
+        }
+        
+        public IActionResult ViewAllUniClasses()
+        {
+            var uniSubjects = _uniSubjectRepository.GetAll();
+            var uniSubjectsViewModel = new UniSubjectsViewModel() { Title = "Mate", UniSubjects = uniSubjects.ToList() };
+
+            return View(uniSubjectsViewModel);
         }
     }
 }
