@@ -7,7 +7,7 @@ namespace DataLayer
     {
         public DbSet<Student> Students { get; private set; }
         public DbSet<Professor> Professors { get; private set; }
-         public DbSet<UniSubject> UniSubjects {get; private set;}
+        public DbSet<UniSubject> UniSubjects {get; private set;}
         public DbSet<SeminarInstance> Seminars {get; private set;}
         public DbSet<CourseInstance> Courses {get;private set;}
         public DbSet<LaboratoryInstance> Laboratories {get; private set;}

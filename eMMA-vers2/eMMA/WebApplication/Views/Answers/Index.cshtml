@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Answer>
+
+@{
+    ViewData["Title"] = "Answer Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-controller="Answers" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnswerText)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var answer in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => answer.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => answer.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => answer.QuestionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => answer.AnswerText)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id= answer.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = answer.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = answer.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

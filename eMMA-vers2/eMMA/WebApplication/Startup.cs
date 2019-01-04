@@ -40,6 +40,8 @@ namespace WebApplication
             services.AddTransient<IRepository<CourseInstance>, CourseRepository>();
             services.AddTransient<IRepository<Attendance>, AttendanceRepository>();
             services.AddTransient<IRepository<Mark>, MarkRepository>();
+            services.AddTransient<IRepository<Answer>, AnswerRepository>();
+            services.AddTransient<IRepository<Question>, QuestionRepository>();
             services.AddMvc();//.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
