@@ -34,8 +34,15 @@ namespace WebApplication
 
             services.AddTransient<IRepository<Student>, StudentRepository>();
             services.AddTransient<IRepository<Professor>, ProfessorRepository>();
+            services.AddTransient<IRepository<UniSubject>, UniSubjectRepository>();
+            services.AddTransient<IRepository<LaboratoryInstance>, LaboratoryRepository>();
+            services.AddTransient<IRepository<SeminarInstance>, SeminarRepository>();
+            services.AddTransient<IRepository<CourseInstance>, CourseRepository>();
+            services.AddTransient<IRepository<File>, FileRepository>();
             services.AddTransient<IRepository<Attendance>, AttendanceRepository>();
             services.AddTransient<IRepository<Mark>, MarkRepository>();
+            services.AddTransient<IRepository<Answer>, AnswerRepository>();
+            services.AddTransient<IRepository<Question>, QuestionRepository>();
             services.AddMvc();//.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

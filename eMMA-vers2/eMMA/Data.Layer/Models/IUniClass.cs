@@ -4,13 +4,13 @@ using System.Text;
 
 namespace DataLayer.Models
 {
-    public interface IUniClass
+    public abstract class IUniClass
     {
-        DateTime Date { get; set; }
-        int Number { get; set; }
-        ICollection<Student> AttendingList { get; set; }
-        string Description { get; set; }
-        ICollection<string> FilePathList { get; set; }
-        ICollection<Question> QuestionList { get; set; }
+        public DateTime Date { get; set; }
+        public int Number { get; set; }
+        public ICollection<Student> AttendingList { get; set; }
+        public string Description { get; set; }
+        public ICollection<File> FileList { get; set; }
+        public ICollection<Question> QuestionList { get; set; }
     }
 }

@@ -1,47 +1,65 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using BusinessLayer;
-using DataLayer;
-using Microsoft.EntityFrameworkCore;
-using DataLayer.Models;
 using BusinessLayer.Repositories;
+using DataLayer.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class QuestionsController : ControllerBase
+
+    public class QuestionsController : Controller
     {
-        private readonly IRepository<Question> _repository;
+        private readonly IRepository<Question> _questionRepository;
 
-        public QuestionsController(IRepository<Question> repository)
+        public QuestionsController(IRepository<Question> questionRepository)
         {
-            _repository = repository;
+            _questionRepository = questionRepository;
         }
 
-        // GET: api/question
-        [HttpGet]
-        public ActionResult<IEnumerable<Question>> GetQuestions()
+
+        public IActionResult Index()
         {
-            return Ok(_repository.GetAll());
+            var allQuestions = _questionRepository.GetAll().ToList();
+            return View(allQuestions);
         }
 
-        // GET: api/questions/1
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Question>> GetQuestion(int id)
+        public IActionResult Create()
         {
-            var question = _repository.GetSingle(id);
+            return View();
+        }
 
-            if (question == null)
-            {
-                return BadRequest();
-            }
+        public IActionResult CreateSave(Question question)
+        {
+            _questionRepository.Add(question);
+            _questionRepository.Save();
+            return RedirectToAction("Index");
+        }
 
-            return question;
+        public IActionResult Details(Guid? id)
+        {
+            var question = _questionRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            return View(question);
+        }
+
+        public IActionResult Edit(Guid? id)
+        {
+            var question = _questionRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            return View(question);
+        }
+
+        public IActionResult EditSave(Question question)
+        {
+            _questionRepository.Edit(question);
+            _questionRepository.Save();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(Guid? id)
+        {
+            var question = _questionRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            _questionRepository.Delete(question);
+            _questionRepository.Save();
+            return RedirectToAction("Index");
         }
     }
 }

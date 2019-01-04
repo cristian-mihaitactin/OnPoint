@@ -12,7 +12,7 @@ namespace BusinessLayer.Repositories
     public interface IRepository<T>
     {
         IQueryable<T> GetAll();
-        T GetSingle(int personId);
+        T GetSingle(Guid personId);
         IQueryable<T> FindBy(Expression<Func<T, bool>> predicate);
         void Add(T entity);
         void Delete(T entity);

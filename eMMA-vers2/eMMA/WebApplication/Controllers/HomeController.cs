@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer.Repositories;
-using WebApplication.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using DataLayer.Models;
 
@@ -19,18 +18,18 @@ namespace WebApplication.Controllers
             _uniSubjectRepository = uniSubjectRepository;
         }
 
-        public IActionResult ViewAllStudents()
-        {
-            var students = _studentRepository.GetAll();
-            var studentsViewModel = new StudentsViewModel() { Title = "Yeees", Students = students.ToList() };
+        //public IActionResult ViewAllStudents()
+        //{
+        //    var students = _studentRepository.GetAll();
+        //    var studentsViewModel = new StudentsViewModel() { Title = "Yeees", Students = students.ToList() };
 
-            return View(studentsViewModel);
-        }
+        //    return View(studentsViewModel);
+        //}
         
         public IActionResult ViewAllUniClasses()
         {
             var uniSubjects = _uniSubjectRepository.GetAll();
-            var uniSubjectsViewModel = new UniSubjectsViewModel() { Title = "Mate", UniSubjects = uniSubjects.ToList() };
+            var uniSubjectsViewModel = new UniSubject { Title = "Mate"};
 
             return View(uniSubjectsViewModel);
         }

@@ -40,7 +40,7 @@ namespace BusinessLayer.Repositories
             return _context.UniSubjects;
         }
 
-        public UniSubject GetSingle(int subjectId)
+        public UniSubject GetSingle(Guid subjectId)
         {
             return _context.UniSubjects.Find(subjectId);
         }

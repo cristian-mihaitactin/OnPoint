@@ -12,36 +12,60 @@ using BusinessLayer.Repositories;
 
 namespace WebApplication.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AnswersController : ControllerBase
+ 
+    public class AnswersController : Controller
     {
-        private readonly IRepository<Answer> _repository;
+        private readonly IRepository<Answer> _answerRepository;
 
-        public AnswersController(IRepository<Answer> repository)
+        public AnswersController(IRepository<Answer> answerRepository)
         {
-            _repository = repository;
+            _answerRepository = answerRepository;
         }
 
-        // GET: api/student
-        [HttpGet]
-        public ActionResult<IEnumerable<Answer>> GetAnswers()
+
+        public IActionResult Index()
         {
-            return Ok(_repository.GetAll());
+            var allAnswers = _answerRepository.GetAll().ToList();
+            return View(allAnswers);
         }
 
-        // GET: api/objects/1
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Answer>> GetAnswer(int id)
+        public IActionResult Create()
         {
-            var answer = _repository.GetSingle(id);
+            return View();
+        }
 
-            if (answer == null)
-            {
-                return BadRequest();
-            }
+        public IActionResult CreateSave(Answer answer)
+        {
+            _answerRepository.Add(answer);
+            _answerRepository.Save();
+            return RedirectToAction("Index");
+        }
 
-            return answer;
+        public IActionResult Details(Guid? id)
+        {
+            var question = _answerRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            return View(question);
+        }
+
+        public IActionResult Edit(Guid? id)
+        {
+            var question = _answerRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            return View(question);
+        }
+
+        public IActionResult EditSave(Answer answer)
+        {
+            _answerRepository.Edit(answer);
+            _answerRepository.Save();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(Guid? id)
+        {
+            var answer = _answerRepository.FindBy(s => s.Id == id).FirstOrDefault();
+            _answerRepository.Delete(answer);
+            _answerRepository.Save();
+            return RedirectToAction("Index");
         }
     }
 }

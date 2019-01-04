@@ -40,7 +40,7 @@ namespace BusinessLayer.Repositories
             return _context.Laboratories;
         }
 
-        public LaboratoryInstance GetSingle(int labId)
+        public LaboratoryInstance GetSingle(Guid labId)
         {
             return _context.Laboratories.Find(labId);
         }

@@ -7,7 +7,7 @@ namespace DataLayer.Models
     public class Question
     {
         public Guid Id { get; set; }
-        public string Text { get; private set; }
+        public String Text { get; set; }
         public ICollection<Answer> AnswerList { get; private set; }
 
         public Question()

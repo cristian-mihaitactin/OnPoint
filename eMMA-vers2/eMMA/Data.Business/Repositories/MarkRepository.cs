@@ -40,7 +40,7 @@ namespace BusinessLayer.Repositories
             return _context.Marks;
         }
 
-        public Mark GetSingle(int studentId)
+        public Mark GetSingle(Guid studentId)
         {
             return _context.Marks.Find(studentId);
         }

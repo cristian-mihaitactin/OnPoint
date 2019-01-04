@@ -42,7 +42,7 @@ namespace BusinessLayer.Repositories
             return _context.Attendances;
         }
 
-        public Attendance GetSingle(int personId)
+        public Attendance GetSingle(Guid personId)
         {
             return _context.Attendances.Find(personId);
         }
