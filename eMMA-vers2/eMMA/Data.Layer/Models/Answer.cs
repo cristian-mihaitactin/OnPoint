@@ -6,7 +6,7 @@ namespace DataLayer.Models
 {
     public class Answer
     {
-        public int Id { get; private set; }
+        public Guid Id { get; private set; }
         public Guid StudentId { get; private set; }
         public Guid QuestionId { get; private set; }
         public string AnswerText { get; private set; }
