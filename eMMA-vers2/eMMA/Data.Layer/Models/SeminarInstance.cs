@@ -7,8 +7,8 @@ namespace DataLayer.Models
 {
     public class SeminarInstance : IPractical
     {
-        [Column("Id")]
-        public Guid Id { get; private set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }
 
         public SeminarInstance()
         {

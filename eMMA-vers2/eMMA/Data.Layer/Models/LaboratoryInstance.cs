@@ -8,7 +8,7 @@ namespace DataLayer.Models
     public class LaboratoryInstance : IPractical
     {
         [Column("Id")]
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
         public LaboratoryInstance()
         {

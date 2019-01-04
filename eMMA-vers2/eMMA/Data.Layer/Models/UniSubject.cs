@@ -16,7 +16,7 @@ namespace DataLayer.Models
     public class UniSubject
     {
         [Column("Id")]
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
         public string Title {get; set;}
         public int Credits {get; private set;}
     

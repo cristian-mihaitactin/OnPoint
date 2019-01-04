@@ -1,18 +1,18 @@
 ﻿@model DataLayer.Models.SeminarInstance
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Seminar Edit";
 }
 
-<h2>Edit</h2>
+<h2>ViewData["Title"]</h2>
 
-<h4>SeminarInstance</h4>
+<h4>Seminar</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="EditSave">
+            <input asp-for="Id" type="hidden" />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="Date" class="control-label"></label>
                 <input asp-for="Date" class="form-control" />
@@ -38,4 +38,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-

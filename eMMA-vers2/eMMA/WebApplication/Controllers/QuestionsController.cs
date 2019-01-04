@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+
     public class QuestionsController : Controller
     {
         private readonly IRepository<Question> _questionRepository;

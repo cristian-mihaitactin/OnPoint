@@ -12,8 +12,7 @@ using BusinessLayer.Repositories;
 
 namespace WebApplication.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+ 
     public class AnswersController : Controller
     {
         private readonly IRepository<Answer> _answerRepository;

@@ -6,7 +6,7 @@ namespace DataLayer.Models
 {
     public class File
     {
-        public Guid Id { get; private set; }
-        public String Path { get; private set; }
+        public Guid Id { get; set; }
+        public String Path { get; set; }
     }
 }

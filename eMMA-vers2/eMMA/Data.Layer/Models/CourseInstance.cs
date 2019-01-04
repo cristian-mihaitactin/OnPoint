@@ -7,7 +7,7 @@ namespace DataLayer.Models
 {
     public class CourseInstance : IUniClass
     {
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
      
         public CourseInstance()
         {

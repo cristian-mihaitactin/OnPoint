@@ -8,13 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UniSubjectsController : Controller
+    public class SubjectsController : Controller
     {
         private readonly IRepository<UniSubject> _repository;
 
-        public UniSubjectsController(IRepository<UniSubject> repository)
+        public SubjectsController(IRepository<UniSubject> repository)
         {
             _repository = repository;
         }
