@@ -2,13 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using BusinessLayer;
-using DataLayer;
-using Microsoft.EntityFrameworkCore;
-using DataLayer.Models;
 using BusinessLayer.Repositories;
+using DataLayer.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
 {
@@ -16,32 +12,56 @@ namespace WebApplication.Controllers
     [ApiController]
     public class UniSubjectsController : ControllerBase
     {
-        private readonly IRepository<UniSubject> _repository;
+        //private readonly IRepository<UniSubject> _repository;
 
-        public UniSubjectsController(IRepository<UniSubject> repository)
-        {
-            _repository = repository;
-        }
+        //public UniSubjectsController(IRepository<UniSubject> repository)
+        //{
+        //    _repository = repository;
+        //}
 
-        // GET: api/uniclass
-        [HttpGet]
-        public ActionResult<IEnumerable<UniSubject>> GetUniSubjects()
-        {
-            return Ok(_repository.GetAll());
-        }
+        //public ActionResult Index()
+        //{
+        //    var allSubjects = _repository.GetAll().ToList();
+        //    return View(allSubjects);
+        //}
 
-        // GET: api/UniClasss/1
-        [HttpGet("{id}")]
-        public ActionResult<UniSubject> GetUniSubject(int id)
-        {
-            var obj = _repository.GetSingle(id);
+        //public ActionResult Create(int id)
+        //{
+        //    return View();
+        //}
 
-            if (obj == null)
-            {
-                return BadRequest();
-            }
+        //public IActionResult CreateSave(UniSubject subject)
+        //{
+        //    _repository.Add(subject);
+        //    _repository.Save();
+        //    return RedirectToAction("Index");
+        //}
 
-            return obj;
-        }
+        //public IActionResult Details(Guid? id)
+        //{
+        //    var subject = _repository.FindBy(s => s.IdSubject == id).FirstOrDefault();
+        //    return View(subject);
+        //}
+
+        //public IActionResult Edit(Guid? id)
+        //{
+        //    var subject = _repository.FindBy(s => s.IdSubject == id).FirstOrDefault();
+        //    return View(subject);
+        //}
+
+        //public IActionResult EditSave(UniSubject subject)
+        //{
+        //    _repository.Edit(subject);
+        //    _repository.Save();
+        //    return RedirectToAction("Index");
+        //}
+
+        //public IActionResult Delete(Guid? id)
+        //{
+        //    var subject = _repository.FindBy(s => s.IdSubject == id).FirstOrDefault();
+        //    _repository.Delete(subject);
+        //    _repository.Save();
+        //    return RedirectToAction("Index");
+        //}
     }
 }

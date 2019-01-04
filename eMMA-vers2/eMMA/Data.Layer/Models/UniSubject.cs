@@ -14,7 +14,7 @@ namespace DataLayer.Models
     public class UniSubject
     {
         
-        public int IdSubject { get; private set; }
+        public Guid IdSubject { get; private set; }
         public string Title {get; set;}
         public int Credits {get; private set;}
     
@@ -24,9 +24,9 @@ namespace DataLayer.Models
 
 
         public UniSubject(){}
-        public UniSubject(int id, string title,int credits)
+        public UniSubject(string title,int credits)
         {
-            IdSubject = id;
+            IdSubject = new Guid();
             Title = title;
             Credits = credits;
         }

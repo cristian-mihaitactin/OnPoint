@@ -34,6 +34,10 @@ namespace WebApplication
 
             services.AddTransient<IRepository<Student>, StudentRepository>();
             services.AddTransient<IRepository<Professor>, ProfessorRepository>();
+            services.AddTransient<IRepository<UniSubject>, UniSubjectRepository>();
+            services.AddTransient<IRepository<LaboratoryInstance>, LaboratoryRepository>();
+            services.AddTransient<IRepository<SeminarInstance>, SeminarRepository>();
+            services.AddTransient<IRepository<CourseInstance>, CourseRepository>();
             services.AddTransient<IRepository<Attendance>, AttendanceRepository>();
             services.AddTransient<IRepository<Mark>, MarkRepository>();
             services.AddMvc();//.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -59,7 +63,7 @@ namespace WebApplication
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Students}/{action=Index}/{id?}"
+                    template: "{controller=Home}/{action=ViewAllUniSubjects}/{id?}"
                     );
             });
         }

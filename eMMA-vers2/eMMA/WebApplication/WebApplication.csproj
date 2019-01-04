@@ -29,7 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\ViewModels\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Views\Subjects\" />
   </ItemGroup>
 
 </Project>
