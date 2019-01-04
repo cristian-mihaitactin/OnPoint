@@ -37,13 +37,13 @@ namespace WebApplication.Controllers
 
         public IActionResult Details(Guid? id)
         {
-            var seminar = _seminarRepository.FindBy(m => m.IdSeminar == id).FirstOrDefault();
+            var seminar = _seminarRepository.FindBy(m => m.Id == id).FirstOrDefault();
             return View(seminar);
         }
 
         public IActionResult Edit(Guid? id)
         {
-            var seminar = _seminarRepository.FindBy(m => m.IdSeminar == id).FirstOrDefault();
+            var seminar = _seminarRepository.FindBy(m => m.Id == id).FirstOrDefault();
             return View(seminar);
         }
 
@@ -56,7 +56,7 @@ namespace WebApplication.Controllers
 
         public IActionResult Delete(Guid? id)
         {
-            var seminar = _seminarRepository.FindBy(m => m.IdSeminar == id).FirstOrDefault();
+            var seminar = _seminarRepository.FindBy(m => m.Id == id).FirstOrDefault();
             _seminarRepository.Delete(seminar);
             _seminarRepository.Save();
             return RedirectToAction("Index");

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace DataLayer.Models
@@ -13,8 +15,8 @@ namespace DataLayer.Models
 
     public class UniSubject
     {
-        
-        public Guid IdSubject { get; private set; }
+        [Column("Id")]
+        public Guid Id { get; private set; }
         public string Title {get; set;}
         public int Credits {get; private set;}
     
@@ -26,7 +28,7 @@ namespace DataLayer.Models
         public UniSubject(){}
         public UniSubject(string title,int credits)
         {
-            IdSubject = new Guid();
+            Id = new Guid();
             Title = title;
             Credits = credits;
         }

@@ -40,7 +40,7 @@ namespace BusinessLayer.Repositories
             return _context.Seminars;
         }
 
-        public SeminarInstance GetSingle(int seminarId)
+        public SeminarInstance GetSingle(Guid seminarId)
         {
             return _context.Seminars.Find(seminarId);
         }

@@ -40,7 +40,7 @@ namespace BusinessLayer.Repositories
             return _context.Professors;
         }
 
-        public Professor GetSingle(int personId)
+        public Professor GetSingle(Guid personId)
         {
             return _context.Professors.Find(personId);
         }

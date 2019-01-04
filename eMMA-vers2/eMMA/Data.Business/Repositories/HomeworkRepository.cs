@@ -42,7 +42,7 @@ namespace BusinessLayer.Repositories
             return _context.Homeworks;
         }
 
-        public Homework GetSingle(int personId)
+        public Homework GetSingle(Guid personId)
         {
             return _context.Homeworks.Find(personId);
         }

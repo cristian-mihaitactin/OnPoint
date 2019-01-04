@@ -40,7 +40,7 @@ namespace BusinessLayer.Repositories
             return _context.Answers;
         }
 
-        public Answer GetSingle(int answerId)
+        public Answer GetSingle(Guid answerId)
         {
             return _context.Answers.Find(answerId);
         }

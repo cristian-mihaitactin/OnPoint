@@ -11,6 +11,7 @@ namespace DataLayer
         public DbSet<SeminarInstance> Seminars {get; private set;}
         public DbSet<CourseInstance> Courses {get;private set;}
         public DbSet<LaboratoryInstance> Laboratories {get; private set;}
+        public DbSet<File> Files { get; private set; }
         public DbSet<Question> Questions {get; private set;}
         public DbSet<Answer> Answers {get; private set;}
         public DbSet<Attendance> Attendances { get; private set; }
@@ -38,6 +39,30 @@ namespace DataLayer
                  .HasMany(s => s.Seminars);
             modelBuilder.Entity<UniSubject>()
                  .HasMany(s => s.Courses);
+            modelBuilder.Entity<SeminarInstance>()
+                .HasMany(s => s.AttendingList);
+            modelBuilder.Entity<SeminarInstance>()
+                .HasMany(s => s.FileList);
+            modelBuilder.Entity<SeminarInstance>()
+                .HasMany(s => s.QuestionList);
+            modelBuilder.Entity<SeminarInstance>()
+                .HasMany(s => s.MarkList);
+            modelBuilder.Entity<SeminarInstance>()
+                .HasMany(s => s.AttendingList);
+            modelBuilder.Entity<LaboratoryInstance>()
+                .HasMany(s => s.FileList);
+            modelBuilder.Entity<LaboratoryInstance>()
+                .HasMany(s => s.QuestionList);
+            modelBuilder.Entity<LaboratoryInstance>()
+                .HasMany(s => s.MarkList);
+            modelBuilder.Entity<CourseInstance>()
+                .HasMany(s => s.AttendingList);
+            modelBuilder.Entity<CourseInstance>()
+                .HasMany(s => s.FileList);
+            modelBuilder.Entity<CourseInstance>()
+                .HasMany(s => s.QuestionList);
+
+
         }
     }
 }

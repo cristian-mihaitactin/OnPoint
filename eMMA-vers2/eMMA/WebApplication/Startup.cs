@@ -38,6 +38,7 @@ namespace WebApplication
             services.AddTransient<IRepository<LaboratoryInstance>, LaboratoryRepository>();
             services.AddTransient<IRepository<SeminarInstance>, SeminarRepository>();
             services.AddTransient<IRepository<CourseInstance>, CourseRepository>();
+            services.AddTransient<IRepository<File>, FileRepository>();
             services.AddTransient<IRepository<Attendance>, AttendanceRepository>();
             services.AddTransient<IRepository<Mark>, MarkRepository>();
             services.AddTransient<IRepository<Answer>, AnswerRepository>();
@@ -65,7 +66,7 @@ namespace WebApplication
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=ViewAllUniSubjects}/{id?}"
+                    template: "{controller=Students}/{action=Index}/{id?}"
                     );
             });
         }

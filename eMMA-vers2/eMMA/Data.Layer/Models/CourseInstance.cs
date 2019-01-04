@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace DataLayer.Models
 {
     public class CourseInstance : IUniClass
     {
-        public Guid IdCurs { get; private set; }
-        public DateTime Date { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Number { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public ICollection<Student> AttendingList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public ICollection<string> FilePathList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public ICollection<Question> QuestionList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-
+        public Guid Id { get; private set; }
+     
         public CourseInstance()
         {
             //EF needs this
