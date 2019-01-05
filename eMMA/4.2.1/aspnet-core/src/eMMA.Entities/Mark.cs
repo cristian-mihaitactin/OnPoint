@@ -1,19 +1,26 @@
-﻿using System;
+﻿using Abp.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataLayer
+namespace eMMA.Entities
 {
-    public class Mark
+    public class Mark : IEntity<Guid>
     {
-        public double Value { get; private set; }
-        public DateTime Date { get; private set; }
-        public Guid StudentId { get; private set; }
-        public Guid InstanceId { get; private set; }
+        public Guid Id { get; set; }
+        public double Value { get; set; }
+        public DateTime Date { get; set; }
+        public Guid StudentId { get; set; }
+        public Guid InstanceId { get; set; }
 
         public Mark()
         {
             //EF needs this
+        }
+
+        public bool IsTransient()
+        {
+            throw new NotImplementedException();
         }
     }
 }

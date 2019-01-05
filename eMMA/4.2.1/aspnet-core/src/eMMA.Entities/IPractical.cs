@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataLayer
+namespace eMMA.Entities
 {
-    public interface IPractical
+    public abstract class IPractical : IUniClass
     {
-        ICollection<Mark> MarkList { get; set; } //doubt?!?
-        Homework Homework{ get; set; }
+        public ICollection<Mark> MarkList { get; set; } //doubt?!?
+        public Homework Homework{ get; set; }
     }
 }
