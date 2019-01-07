@@ -11,8 +11,6 @@ namespace eMMA.EmailProvider.Tests
 {
     public class EmailSenderShould
     {
-        private readonly string sendGridUser = @"cristian.mihaita @maxcode.net";
-        private readonly string sendGridPass = "Maxcode2015!";
         private readonly string sendGridKey = @"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";
 
         private Mock<EmailSenderWrapper> GetEmailSenderMock()
