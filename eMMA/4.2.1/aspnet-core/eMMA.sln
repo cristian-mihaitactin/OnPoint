@@ -29,9 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.EmailProvider", "src\e
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.DeploySteps", "src\eMMA.DeploySteps\eMMA.DeploySteps.csproj", "{FD260F3E-BF5E-4B4C-8497-8919B3A5FC13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMMA.Interfaces", "eMMA.Interfaces\eMMA.Interfaces.csproj", "{09D0D557-6B9E-4A7D-9BCC-7315C6402812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.Interfaces", "eMMA.Interfaces\eMMA.Interfaces.csproj", "{09D0D557-6B9E-4A7D-9BCC-7315C6402812}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMMA.EmailProvider.Tests", "eMMA.EmailProvider.Tests\eMMA.EmailProvider.Tests.csproj", "{02EA3C1A-B5A1-419E-A318-B716BC2E19E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eMMA.EmailProvider.Tests", "eMMA.EmailProvider.Tests\eMMA.EmailProvider.Tests.csproj", "{02EA3C1A-B5A1-419E-A318-B716BC2E19E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

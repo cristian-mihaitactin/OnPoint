@@ -5,18 +5,15 @@ using System.Text;
 
 namespace eMMA.Entities
 {
-    public class Homework : IEntity<Guid>
+    public abstract class IUniClass : IEntity<Guid>
     {
         public Guid Id { get; set; }
-        public Guid InstanceId { get; set; }
-        public string Title { get; set; }
+        public DateTime Date { get; set; }
+        public int Number { get; set; }
+        public ICollection<Student> AttendingList { get; set; }
         public string Description { get; set; }
-
-        public Homework()
-        {
-            
-            //EF needs this
-        }
+        public ICollection<File> FileList { get; set; }
+        public ICollection<Question> QuestionList { get; set; }
 
         public bool IsTransient()
         {

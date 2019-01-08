@@ -5552,3 +5552,910 @@ System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-s
    at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:2,State:0,Class:20
+DEBUG 2019-01-05 17:11:26,707 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-05 17:11:26,807 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-05 17:11:26,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,832 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,832 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:26,835 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-05 17:11:26,934 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:26,934 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:26,934 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:26,934 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:27,391 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:28,861 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-05 17:11:28,950 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-05 17:11:28,964 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-05 17:11:28,970 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-05 17:11:28,975 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-05 17:11:29,256 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-05 17:11:29,309 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-05 17:11:29,309 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-05 17:11:29,320 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-05 17:11:29,320 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-05 17:11:29,321 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-05 17:11:29,321 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-05 17:11:29,321 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-05 17:11:29,321 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-05 17:11:29,321 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-05 17:11:29,322 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-05 17:11:29,322 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-05 17:11:29,322 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-05 17:11:29,322 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-01-05 17:11:44,369 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-05 17:11:44,397 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-05 17:11:44,415 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,417 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:44,424 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-05 17:11:44,496 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:44,496 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:44,496 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:44,496 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:11:44,874 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:11:45,463 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-05 17:11:45,550 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-05 17:11:45,565 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-05 17:11:45,570 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-05 17:11:45,577 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-05 17:11:45,618 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-05 17:11:45,679 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-05 17:11:45,679 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-05 17:11:45,688 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-05 17:11:45,688 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-05 17:11:45,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-05 17:11:45,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-05 17:11:45,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-05 17:11:45,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-05 17:11:45,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-05 17:11:45,690 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-05 17:11:45,690 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-05 17:11:45,690 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-05 17:11:45,690 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+FATAL 2019-01-05 17:11:47,071 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve[T](Object argumentsAsAnonymousType)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 50
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at eMMA.EntityFrameworkCore.Seed.SeedHelper.WithDbContext[TDbContext](IIocResolver iocResolver, Action`1 contextAction) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 39
+   at eMMA.EntityFrameworkCore.Seed.SeedHelper.SeedHostDb(IIocResolver iocResolver) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 17
+   at eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule.PostInitialize() in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMAEntityFrameworkModule.cs:line 46
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.AbpBootstrapper.Initialize() in D:\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:line 155
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve[T](Object argumentsAsAnonymousType)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 50
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at eMMA.EntityFrameworkCore.Seed.SeedHelper.WithDbContext[TDbContext](IIocResolver iocResolver, Action`1 contextAction) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 39
+   at eMMA.EntityFrameworkCore.Seed.SeedHelper.SeedHostDb(IIocResolver iocResolver) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 17
+   at eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule.PostInitialize() in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMAEntityFrameworkModule.cs:line 46
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.AbpBootstrapper.Initialize() in D:\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:line 155
+FATAL 2019-01-05 17:11:47,091 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Application startup exception
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve[T](Object argumentsAsAnonymousType)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 50
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at eMMA.EntityFrameworkCore.Seed.SeedHelper.WithDbContext[TDbContext](IIocResolver iocResolver, Action`1 contextAction) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 39
+   at eMMA.EntityFrameworkCore.Seed.SeedHelper.SeedHostDb(IIocResolver iocResolver) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 17
+   at eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule.PostInitialize() in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMAEntityFrameworkModule.cs:line 46
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.AbpBootstrapper.Initialize() in D:\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:line 155
+   at Abp.AspNetCore.AbpApplicationBuilderExtensions.InitializeAbp(IApplicationBuilder app) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\AbpApplicationBuilderExtensions.cs:line 67
+   at Abp.AspNetCore.AbpApplicationBuilderExtensions.UseAbp(IApplicationBuilder app, Action`1 optionsAction) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\AbpApplicationBuilderExtensions.cs:line 38
+   at eMMA.Web.Startup.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\Startup\Startup.cs:line 60
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+INFO  2019-01-05 17:11:47,443 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-01-05 17:11:47,443 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+ERROR 2019-01-05 17:11:47,492 [6    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLJJ40E6MI9I", Request id "0HLJJ40E6MI9I:00000001": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-01-05 17:11:47,520 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLJJ40E6MI9J", Request id "0HLJJ40E6MI9J:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot write to the response body, the response has completed.
+Object name: 'HttpResponseStream'.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.<ValidateState>g__ThrowObjectDisposedException|24_0()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-01-05 17:11:47,556 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 114.1174ms 500 
+INFO  2019-01-05 17:11:47,557 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 114.136ms 500 
+WARN  2019-01-05 17:11:50,662 [11   ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 44
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 36
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 93
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 44
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 36
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 93
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+WARN  2019-01-05 17:11:55,669 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at lambda_method(Closure , ServiceProviderEngineScope )
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 44
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 36
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 93
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at lambda_method(Closure , ServiceProviderEngineScope )
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 44
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 36
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 93
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+WARN  2019-01-05 17:12:00,679 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at lambda_method(Closure , ServiceProviderEngineScope )
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 44
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 36
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 93
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate eMMA.EntityFrameworkCore.eMMADbContext ---> System.InvalidOperationException: Unable to determine the relationship represented by navigation property 'User.DeleterUser' of type 'User'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.PropertyMappingValidationConvention.Apply(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelBuilt(InternalModelBuilder modelBuilder)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at lambda_method(Closure , ServiceProviderEngineScope )
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.Internal.InternalAccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at eMMA.EntityFrameworkCore.eMMADbContext..ctor(DbContextOptions`1 options) in C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.EntityFrameworkCore\EntityFrameworkCore\eMMADbContext.cs:line 29
+   at lambda_method(Closure , Object[] )
+   at Castle.Core.Internal.ReflectionUtil.Instantiate[TBase](Type subtypeofTBase, Object[] ctorArgs)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- End of inner exception stack trace ---
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy, Boolean ignoreParentContext)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Abp.EntityFrameworkCore.DefaultDbContextResolver.Resolve[TDbContext](String connectionString, DbConnection existingConnection) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\DefaultDbContextResolver.cs:line 44
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 36
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 120
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 36
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 93
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+INFO  2019-01-05 17:12:04,208 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-05 17:12:04,531 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 147.8332ms 500 text/html; charset=utf-8
+DEBUG 2019-01-05 17:14:22,695 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-05 17:14:22,816 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-05 17:14:22,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:22,844 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-05 17:14:22,931 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:14:22,931 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:14:22,931 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:14:22,931 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:14:23,364 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:14:24,905 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-05 17:14:24,996 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-05 17:14:25,007 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-05 17:14:25,012 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-05 17:14:25,018 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-05 17:14:25,280 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-05 17:14:25,340 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-05 17:14:25,340 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-05 17:14:25,349 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-05 17:14:25,350 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-05 17:14:25,351 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-05 17:14:25,351 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-05 17:14:25,352 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-05 17:14:25,352 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-05 17:14:25,352 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-05 17:14:25,353 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-05 17:14:25,353 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-05 17:14:25,353 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-05 17:14:25,353 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-01-05 17:15:40,941 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-05 17:15:40,966 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-05 17:15:40,984 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,988 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,988 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,988 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,988 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:40,993 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-05 17:15:41,059 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:15:41,060 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:15:41,060 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:15:41,060 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-05 17:15:41,376 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-05 17:15:41,839 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-05 17:15:41,979 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-05 17:15:41,994 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-05 17:15:41,999 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-05 17:15:42,004 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-05 17:15:42,072 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-05 17:15:42,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-05 17:15:42,130 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-05 17:15:42,141 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-05 17:15:42,142 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-05 17:15:42,143 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-05 17:15:42,143 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-05 17:15:42,143 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-05 17:15:42,143 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-05 17:15:42,143 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-05 17:15:42,144 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-05 17:15:42,144 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-05 17:15:42,145 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-05 17:15:42,145 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-01-05 17:15:47,826 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-05 17:15:47,826 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-01-05 17:15:49,422 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+INFO  2019-01-05 17:15:49,422 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+WARN  2019-01-05 17:15:49,605 [11   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+WARN  2019-01-05 17:15:49,605 [9    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-01-05 17:15:49,607 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-05 17:15:49,607 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-05 17:15:49,620 [11   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-05 17:15:49,620 [9    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-05 17:15:49,644 [9    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-05 17:15:49,644 [11   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-05 17:15:49,647 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 220.7719ms
+INFO  2019-01-05 17:15:49,647 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 220.7707ms
+INFO  2019-01-05 17:15:49,727 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1907.4348ms 302 
+INFO  2019-01-05 17:15:49,727 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1906.0228ms 302 
+INFO  2019-01-05 17:16:53,495 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-05 17:16:53,509 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+WARN  2019-01-05 17:16:53,511 [16   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-01-05 17:16:53,517 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-05 17:16:53,523 [16   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-05 17:16:53,526 [16   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-05 17:16:53,530 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 17.3437ms
+INFO  2019-01-05 17:16:53,537 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 53.6508ms 302 
+INFO  2019-01-05 17:16:53,550 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-01-05 17:16:53,602 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc)
+INFO  2019-01-05 17:16:57,820 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-01-05 17:16:57,832 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.6946ms.
+INFO  2019-01-05 17:16:58,074 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-01-05 17:16:58,956 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 976.9383ms.
+INFO  2019-01-05 17:16:58,973 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) in 5360.1235ms
+INFO  2019-01-05 17:16:59,100 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5493.4456ms 200 text/html; charset=utf-8
+INFO  2019-01-05 17:16:59,117 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=fmMNkMcjSw3xcp9iuPnku_ryk9kaWgrEbfJfKmdZ45o  
+INFO  2019-01-05 17:16:59,161 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2019-01-05 17:16:59,190 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2019-01-05 17:16:59,207 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2019-01-05 17:16:59,216 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2019-01-05 17:16:59,235 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2019-01-05 17:16:59,413 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2019-01-05 17:16:59,511 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\material-icons\materialicons.css'
+INFO  2019-01-05 17:16:59,521 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2019-01-05 17:16:59,549 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 429.7115ms 200 text/css
+INFO  2019-01-05 17:16:59,555 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 443.5531ms 200 text/css
+INFO  2019-01-05 17:16:59,558 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2019-01-05 17:16:59,561 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/roboto.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\roboto\roboto.css'
+INFO  2019-01-05 17:16:59,565 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=j_16MTiQNlUrKdjTrCjLCSGkIIjHvt8tFUyucW02Vqw  
+INFO  2019-01-05 17:16:59,572 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 441.7866ms 200 text/css
+INFO  2019-01-05 17:16:59,576 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 342.5617ms 200 text/css
+INFO  2019-01-05 17:16:59,583 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2019-01-05 17:16:59,592 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=151KUrNx-cFGpjXC7QZ8WbWSo-mQTLO0htvGyBUR_i8  
+INFO  2019-01-05 17:16:59,596 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\Waves\dist\waves.css'
+INFO  2019-01-05 17:16:59,607 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Account\Login.css'
+INFO  2019-01-05 17:16:59,609 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 46.5321ms 200 text/css
+INFO  2019-01-05 17:16:59,614 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/animate.css/animate.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\animate.css\animate.css'
+INFO  2019-01-05 17:16:59,620 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.4708ms 200 text/css
+INFO  2019-01-05 17:16:59,623 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=DZAnKJ_6XZ9si04Hgrsxu_8s717jcIzLy3oi35EouyE  
+INFO  2019-01-05 17:16:59,631 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.8903ms 200 text/css
+INFO  2019-01-05 17:16:59,636 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2019-01-05 17:16:59,641 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=Cr6N6zNN4bp0OwTQOZ6Z66M2r-2dpy_EwKMCyZ-SOMg  
+INFO  2019-01-05 17:16:59,655 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\toastr\toastr.css'
+INFO  2019-01-05 17:16:59,678 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2019-01-05 17:16:59,694 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 538.0438ms 200 text/css
+INFO  2019-01-05 17:16:59,697 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 452.1363ms 200 text/css
+INFO  2019-01-05 17:16:59,706 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\json2\json2.js'
+INFO  2019-01-05 17:16:59,758 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2019-01-05 17:16:59,764 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2019-01-05 17:16:59,768 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
+INFO  2019-01-05 17:16:59,775 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 140.2694ms 200 application/javascript
+INFO  2019-01-05 17:16:59,780 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 150.2298ms 200 application/javascript
+INFO  2019-01-05 17:16:59,785 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2019-01-05 17:16:59,790 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/_Layout.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Account\_Layout.css'
+INFO  2019-01-05 17:16:59,791 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2019-01-05 17:16:59,796 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 92.3298ms 200 text/css
+INFO  2019-01-05 17:16:59,807 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/materialize.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\css\materialize.css'
+INFO  2019-01-05 17:16:59,815 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.min.js?v=aPktydUv1rN3mouQeXoKi3ioFTIQlULuqYeoTAA2ihY  
+INFO  2019-01-05 17:16:59,821 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 114.597ms 200 text/css
+INFO  2019-01-05 17:16:59,829 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.min.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert.min.js'
+INFO  2019-01-05 17:16:59,842 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2019-01-05 17:16:59,849 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.2707ms 200 application/javascript
+INFO  2019-01-05 17:16:59,858 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2019-01-05 17:16:59,867 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\toastr\toastr.js'
+INFO  2019-01-05 17:16:59,873 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2019-01-05 17:16:59,877 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.8237ms 200 application/javascript
+INFO  2019-01-05 17:16:59,887 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.4134ms 200 application/javascript
+INFO  2019-01-05 17:16:59,894 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2019-01-05 17:16:59,905 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2019-01-05 17:16:59,908 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2019-01-05 17:16:59,916 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2019-01-05 17:16:59,918 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 133.7332ms 200 application/javascript
+INFO  2019-01-05 17:16:59,923 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 285.4743ms 200 application/javascript
+INFO  2019-01-05 17:16:59,925 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2019-01-05 17:16:59,928 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=FGfi3RfHf06ftjVdq2JaO16cF9CPZNPvujmuYBacXxg  
+INFO  2019-01-05 17:16:59,931 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\spin.js\spin.js'
+INFO  2019-01-05 17:16:59,934 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2019-01-05 17:16:59,937 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.4377ms 200 application/javascript
+INFO  2019-01-05 17:16:59,940 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.3453ms 200 application/javascript
+INFO  2019-01-05 17:16:59,962 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2019-01-05 17:16:59,996 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2019-01-05 17:17:00,016 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\Waves\dist\waves.js'
+INFO  2019-01-05 17:17:00,023 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 79.5995ms 200 application/javascript
+INFO  2019-01-05 17:17:00,034 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 137.0593ms 200 application/javascript
+INFO  2019-01-05 17:17:00,040 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 58.7609ms 200 application/javascript
+INFO  2019-01-05 17:17:00,046 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=lMgLZMlGsipWDxpvEPxfKVREzRedV_ygRnTj2kvADpw  
+INFO  2019-01-05 17:17:00,058 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=guLvtVJMvLobKpGAlQigrGWMQ1sGQo4yTL46zjGQUUY  
+INFO  2019-01-05 17:17:00,064 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2019-01-05 17:17:00,099 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2019-01-05 17:17:00,118 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2019-01-05 17:17:00,131 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2019-01-05 17:17:00,135 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2019-01-05 17:17:00,140 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 96.918ms 200 application/javascript
+INFO  2019-01-05 17:17:00,152 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 91.9868ms 200 application/javascript
+INFO  2019-01-05 17:17:00,166 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2019-01-05 17:17:00,184 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\css\style.css'
+INFO  2019-01-05 17:17:00,191 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 104.0601ms 200 application/javascript
+INFO  2019-01-05 17:17:00,197 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2019-01-05 17:17:00,201 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=_sUixSUZcmP81slFpHh9ygZ5nNihdHlHLkpoSCncHCw  
+INFO  2019-01-05 17:17:00,207 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 97.4706ms 200 application/javascript
+INFO  2019-01-05 17:17:00,213 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 608.4682ms 200 text/css
+INFO  2019-01-05 17:17:00,222 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636823053420746057  
+INFO  2019-01-05 17:17:00,227 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636823053420746057  
+INFO  2019-01-05 17:17:00,237 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=iyLpPNL9mk92DMd4L7lbff2apc-OsgwmJCWAvx3bIdc  
+INFO  2019-01-05 17:17:00,244 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/admin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\js\admin.js'
+INFO  2019-01-05 17:17:00,249 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-01-05 17:17:00,257 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 55.6282ms 200 application/javascript
+INFO  2019-01-05 17:17:00,280 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\js\main.js'
+INFO  2019-01-05 17:17:00,316 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-01-05 17:17:00,327 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=636823054189236366  
+INFO  2019-01-05 17:17:00,331 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 128.0582ms 200 application/javascript
+INFO  2019-01-05 17:17:00,344 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-01-05 17:17:00,346 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2019-01-05 17:17:00,358 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.8694ms 200 application/javascript
+INFO  2019-01-05 17:17:00,371 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-01-05 17:17:00,375 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2019-01-05 17:17:00,382 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2019-01-05 17:17:00,397 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\roboto\d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+INFO  2019-01-05 17:17:00,420 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 341.4115ms 200 application/javascript
+INFO  2019-01-05 17:17:00,434 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.woff2'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\material-icons\materialicons.woff2'
+INFO  2019-01-05 17:17:00,450 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 60.9417ms 200 font/woff2
+INFO  2019-01-05 17:17:00,465 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.9753ms 200 font/woff2
+INFO  2019-01-05 17:17:00,471 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-01-05 17:17:00,501 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=o2PUQBkwW7VjtzD5RNxKPa3oShr3fMFHds_2dwIAV5M  
+INFO  2019-01-05 17:17:00,531 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2019-01-05 17:17:00,545 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2019-01-05 17:17:00,560 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\roboto\CWB0XYA8bzo0kSThX0UTuA.woff2'
+INFO  2019-01-05 17:17:00,616 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 122.6615ms 200 application/javascript
+INFO  2019-01-05 17:17:00,623 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-01-05 17:17:00,627 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 293.9768ms.
+INFO  2019-01-05 17:17:00,646 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 227.2666ms 200 font/woff2
+INFO  2019-01-05 17:17:00,678 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-01-05 17:17:00,743 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 432.3617ms
+INFO  2019-01-05 17:17:00,783 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 528.5199ms 200 application/x-javascript; charset=utf-8
+INFO  2019-01-05 17:17:00,788 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2019-01-05 17:17:00,795 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 338.1364ms 200 image/png
+INFO  2019-01-05 17:17:00,857 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 227.9582ms.
+INFO  2019-01-05 17:17:00,861 [16   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-01-05 17:17:00,865 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 490.7324ms
+INFO  2019-01-05 17:17:00,874 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 656.4764ms 200 application/x-javascript
+INFO  2019-01-05 17:17:01,911 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-01-05 17:17:01,919 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-01-05 17:17:01,923 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.1943ms 200 image/x-icon
