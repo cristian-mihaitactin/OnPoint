@@ -39,6 +39,22 @@ namespace eMMA.EntityFrameworkCore.Seed.Tenants
                 _context.SaveChanges();
             }
 
+            // Student and Professor roles
+
+            var studentRole = _context.Roles.IgnoreQueryFilters().FirstOrDefault(r => r.TenantId == _tenantId && r.Name == StaticRoleNames.Tenants.Student);
+            if (studentRole == null)
+            {
+                studentRole = _context.Roles.Add(new Role(_tenantId, StaticRoleNames.Tenants.Student, StaticRoleNames.Tenants.Student) { IsStatic = true }).Entity;
+                _context.SaveChanges();
+            }
+
+            var professorRole = _context.Roles.IgnoreQueryFilters().FirstOrDefault(r => r.TenantId == _tenantId && r.Name == StaticRoleNames.Tenants.Professor);
+            if (professorRole == null)
+            {
+                professorRole = _context.Roles.Add(new Role(_tenantId, StaticRoleNames.Tenants.Professor, StaticRoleNames.Tenants.Professor) { IsStatic = true }).Entity;
+                _context.SaveChanges();
+            }
+
             // Grant all permissions to admin role
 
             var grantedPermissions = _context.Permissions.IgnoreQueryFilters()
