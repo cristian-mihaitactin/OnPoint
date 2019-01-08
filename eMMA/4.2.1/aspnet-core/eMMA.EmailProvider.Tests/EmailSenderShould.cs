@@ -6,23 +6,34 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
+using Microsoft.Extensions.Configuration;
 
 namespace eMMA.EmailProvider.Tests
 {
     public class EmailSenderShould
     {
-        private readonly string sendGridKey = @"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";
+        private IConfiguration Configuration { get; set; }
 
-        private Mock<EmailSenderWrapper> GetEmailSenderMock()
+        public EmailSenderShould()
+        {
+            // the type specified here is just so the secrets library can 
+            // find the UserSecretId we added in the csproj file
+            var builder = new ConfigurationBuilder()
+                .AddUserSecrets<EmailSenderShould>();
+
+            Configuration = builder.Build();
+        }
+
+            private Mock<EmailSenderWrapper> GetEmailSenderMock()
         {
             //IOptions<AuthMessageSenderOptions> optionsAccessor = new Options();
             var senderOptions = Options.Create(new AuthMessageSenderOptions()
             {
-                SendGridUser = sendGridUser,
-                SendGridKey = sendGridKey
+                SendGridUser = Configuration["SendGridUser"],
+                SendGridKey = Configuration["SendGridKey"]
             });
 
-            var clientMock = new Mock<SendGridClient>(sendGridKey,null,null,null,null);
+            var clientMock = new Mock<SendGridClient>(null/*sendGridKey*/,null,null,null,null);
 
             var emailSenderWrapper = new Mock<EmailSenderWrapper>(senderOptions, clientMock);
 

@@ -6459,3 +6459,582 @@ INFO  2019-01-05 17:17:00,874 [16   ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2019-01-05 17:17:01,911 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
 INFO  2019-01-05 17:17:01,919 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\favicon.ico'
 INFO  2019-01-05 17:17:01,923 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.1943ms 200 image/x-icon
+DEBUG 2019-01-08 23:35:20,801 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-08 23:35:20,884 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-08 23:35:20,912 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,915 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:20,923 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-08 23:35:21,011 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:35:21,011 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:35:21,011 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:35:21,011 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:35:21,418 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:35:22,830 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-08 23:35:22,920 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-08 23:35:22,930 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-08 23:35:22,936 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-08 23:35:22,941 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-08 23:35:23,227 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-08 23:35:23,299 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-08 23:35:23,299 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-08 23:35:23,309 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-08 23:35:23,310 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-08 23:35:23,311 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-08 23:35:23,312 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-08 23:35:23,312 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-08 23:35:23,312 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-08 23:35:23,312 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-08 23:35:23,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-08 23:35:23,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-08 23:35:23,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-08 23:35:23,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-01-08 23:35:30,677 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-08 23:35:30,677 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-01-08 23:35:30,800 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 116.8992ms 200 
+INFO  2019-01-08 23:35:35,954 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+WARN  2019-01-08 23:35:36,453 [6    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-01-08 23:35:36,465 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-08 23:35:36,479 [6    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-08 23:35:36,506 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-08 23:35:36,514 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 546.1906ms
+INFO  2019-01-08 23:35:36,538 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5871.8994ms 302 
+INFO  2019-01-08 23:35:36,541 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-01-08 23:35:36,589 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc)
+INFO  2019-01-08 23:35:40,415 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-01-08 23:35:40,429 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.5521ms.
+INFO  2019-01-08 23:35:40,813 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-01-08 23:35:41,612 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 868.4183ms.
+INFO  2019-01-08 23:35:41,625 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) in 5030.4505ms
+INFO  2019-01-08 23:35:41,713 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=fmMNkMcjSw3xcp9iuPnku_ryk9kaWgrEbfJfKmdZ45o  
+INFO  2019-01-08 23:35:41,716 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2019-01-08 23:35:41,722 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2019-01-08 23:35:41,725 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5181.4596ms 200 text/html; charset=utf-8
+INFO  2019-01-08 23:35:41,730 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2019-01-08 23:35:41,733 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2019-01-08 23:35:41,769 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/roboto.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\roboto\roboto.css'
+INFO  2019-01-08 23:35:41,774 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\toastr\toastr.css'
+INFO  2019-01-08 23:35:41,784 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 68.1651ms 200 text/css
+INFO  2019-01-08 23:35:41,775 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2019-01-08 23:35:41,791 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\material-icons\materialicons.css'
+INFO  2019-01-08 23:35:41,800 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 87.941ms 200 text/css
+INFO  2019-01-08 23:35:41,823 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 90.4516ms 200 text/css
+INFO  2019-01-08 23:35:41,831 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2019-01-08 23:35:41,840 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2019-01-08 23:35:41,850 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=151KUrNx-cFGpjXC7QZ8WbWSo-mQTLO0htvGyBUR_i8  
+INFO  2019-01-08 23:35:41,853 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 105.6824ms 200 text/css
+INFO  2019-01-08 23:35:41,858 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\Waves\dist\waves.css'
+INFO  2019-01-08 23:35:41,864 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2019-01-08 23:35:41,868 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.7284ms 200 text/css
+INFO  2019-01-08 23:35:41,870 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2019-01-08 23:35:41,887 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 58.8013ms 200 text/css
+INFO  2019-01-08 23:35:41,902 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2019-01-08 23:35:41,911 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2019-01-08 23:35:41,914 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/materialize.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\css\materialize.css'
+INFO  2019-01-08 23:35:41,917 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
+INFO  2019-01-08 23:35:41,921 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 217.3892ms 200 text/css
+INFO  2019-01-08 23:35:41,937 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 61.2651ms 200 text/css
+INFO  2019-01-08 23:35:41,938 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=j_16MTiQNlUrKdjTrCjLCSGkIIjHvt8tFUyucW02Vqw  
+INFO  2019-01-08 23:35:41,943 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2019-01-08 23:35:41,950 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=DZAnKJ_6XZ9si04Hgrsxu_8s717jcIzLy3oi35EouyE  
+INFO  2019-01-08 23:35:41,953 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/_Layout.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Account\_Layout.css'
+INFO  2019-01-08 23:35:41,966 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64.7772ms 200 text/css
+INFO  2019-01-08 23:35:41,968 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Account\Login.css'
+INFO  2019-01-08 23:35:42,003 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\json2\json2.js'
+INFO  2019-01-08 23:35:42,014 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 46.4377ms 200 text/css
+INFO  2019-01-08 23:35:42,032 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2019-01-08 23:35:42,047 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2019-01-08 23:35:42,051 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\css\style.css'
+INFO  2019-01-08 23:35:42,058 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 68.605ms 200 application/javascript
+INFO  2019-01-08 23:35:42,061 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 214.9702ms 200 text/css
+INFO  2019-01-08 23:35:42,064 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/animate.css/animate.css'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\animate.css\animate.css'
+INFO  2019-01-08 23:35:42,075 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2019-01-08 23:35:42,098 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2019-01-08 23:35:42,104 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 134.4459ms 200 application/javascript
+INFO  2019-01-08 23:35:42,106 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2019-01-08 23:35:42,111 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.min.js?v=aPktydUv1rN3mouQeXoKi3ioFTIQlULuqYeoTAA2ihY  
+INFO  2019-01-08 23:35:42,112 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.8807ms 200 application/javascript
+INFO  2019-01-08 23:35:42,119 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=Cr6N6zNN4bp0OwTQOZ6Z66M2r-2dpy_EwKMCyZ-SOMg  
+INFO  2019-01-08 23:35:42,124 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 193.4736ms 200 text/css
+INFO  2019-01-08 23:35:42,128 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2019-01-08 23:35:42,141 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.min.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert.min.js'
+INFO  2019-01-08 23:35:42,152 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\toastr\toastr.js'
+INFO  2019-01-08 23:35:42,154 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.0752ms 200 application/javascript
+INFO  2019-01-08 23:35:42,157 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 52.5961ms 200 application/javascript
+INFO  2019-01-08 23:35:42,166 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\spin.js\spin.js'
+INFO  2019-01-08 23:35:42,185 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2019-01-08 23:35:42,190 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2019-01-08 23:35:42,192 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 46.8798ms 200 application/javascript
+INFO  2019-01-08 23:35:42,195 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2019-01-08 23:35:42,198 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=lMgLZMlGsipWDxpvEPxfKVREzRedV_ygRnTj2kvADpw  
+INFO  2019-01-08 23:35:42,206 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 127.8312ms 200 application/javascript
+INFO  2019-01-08 23:35:42,213 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2019-01-08 23:35:42,233 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\Waves\dist\waves.js'
+INFO  2019-01-08 23:35:42,240 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2019-01-08 23:35:42,244 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 65.4621ms 200 application/javascript
+INFO  2019-01-08 23:35:42,256 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 52.5855ms 200 application/javascript
+INFO  2019-01-08 23:35:42,267 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2019-01-08 23:35:42,292 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2019-01-08 23:35:42,297 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 252.6592ms 200 application/javascript
+INFO  2019-01-08 23:35:42,309 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2019-01-08 23:35:42,318 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2019-01-08 23:35:42,341 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=FGfi3RfHf06ftjVdq2JaO16cF9CPZNPvujmuYBacXxg  
+INFO  2019-01-08 23:35:42,364 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\roboto\d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+INFO  2019-01-08 23:35:42,377 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.woff2'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\material-icons\materialicons.woff2'
+INFO  2019-01-08 23:35:42,387 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 114.2474ms 200 font/woff2
+INFO  2019-01-08 23:35:42,391 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.7031ms 200 font/woff2
+INFO  2019-01-08 23:35:42,395 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2019-01-08 23:35:42,400 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\fonts\roboto\CWB0XYA8bzo0kSThX0UTuA.woff2'
+INFO  2019-01-08 23:35:42,403 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 191.907ms 200 application/javascript
+INFO  2019-01-08 23:35:42,411 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2019-01-08 23:35:42,415 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2019-01-08 23:35:42,419 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2019-01-08 23:35:42,425 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 289.3604ms 200 application/javascript
+INFO  2019-01-08 23:35:42,433 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 165.8218ms 200 font/woff2
+INFO  2019-01-08 23:35:42,435 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2019-01-08 23:35:42,447 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=guLvtVJMvLobKpGAlQigrGWMQ1sGQo4yTL46zjGQUUY  
+INFO  2019-01-08 23:35:42,479 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2019-01-08 23:35:42,488 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2019-01-08 23:35:42,494 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 285.5655ms 200 application/javascript
+INFO  2019-01-08 23:35:42,502 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2019-01-08 23:35:42,504 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 85.1816ms 200 application/javascript
+INFO  2019-01-08 23:35:42,513 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2019-01-08 23:35:42,517 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=_sUixSUZcmP81slFpHh9ygZ5nNihdHlHLkpoSCncHCw  
+INFO  2019-01-08 23:35:42,522 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 76.7717ms 200 application/javascript
+INFO  2019-01-08 23:35:42,530 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=iyLpPNL9mk92DMd4L7lbff2apc-OsgwmJCWAvx3bIdc  
+INFO  2019-01-08 23:35:42,535 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636825873232324510  
+INFO  2019-01-08 23:35:42,538 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 90.2217ms 200 application/javascript
+INFO  2019-01-08 23:35:42,544 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\js\main.js'
+INFO  2019-01-08 23:35:42,546 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2019-01-08 23:35:42,552 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636825873232324510  
+INFO  2019-01-08 23:35:42,558 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.1521ms 200 application/javascript
+INFO  2019-01-08 23:35:42,561 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 140.655ms 200 application/javascript
+INFO  2019-01-08 23:35:42,571 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=636825873415823719  
+INFO  2019-01-08 23:35:42,576 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=o2PUQBkwW7VjtzD5RNxKPa3oShr3fMFHds_2dwIAV5M  
+INFO  2019-01-08 23:35:42,579 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/admin.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\js\admin.js'
+INFO  2019-01-08 23:35:42,590 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.3781ms 200 application/javascript
+INFO  2019-01-08 23:35:42,596 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-01-08 23:35:42,600 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-01-08 23:35:42,603 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2019-01-08 23:35:42,605 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.7348ms 200 application/javascript
+INFO  2019-01-08 23:35:42,611 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-01-08 23:35:42,612 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.6643ms 200 application/javascript
+INFO  2019-01-08 23:35:42,634 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-01-08 23:35:42,635 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2019-01-08 23:35:42,657 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.5859ms 200 image/png
+INFO  2019-01-08 23:35:42,666 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-01-08 23:35:42,706 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-01-08 23:35:42,815 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 176.9181ms.
+INFO  2019-01-08 23:35:42,825 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-01-08 23:35:42,837 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 230.1274ms
+INFO  2019-01-08 23:35:42,840 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 292.5135ms 200 application/x-javascript; charset=utf-8
+INFO  2019-01-08 23:35:42,858 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 148.0106ms.
+INFO  2019-01-08 23:35:42,863 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-01-08 23:35:42,868 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 197.3619ms
+INFO  2019-01-08 23:35:42,875 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 343.7233ms 200 application/x-javascript
+INFO  2019-01-08 23:51:10,800 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger  
+INFO  2019-01-08 23:51:10,805 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.8187ms 301 
+INFO  2019-01-08 23:51:10,825 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/index.html  
+INFO  2019-01-08 23:51:10,872 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.3084ms 200 text/html
+INFO  2019-01-08 23:51:10,949 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-08 23:51:10,959 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/swagger-ui-bundle.js  
+INFO  2019-01-08 23:51:10,961 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/swagger-ui.css  
+INFO  2019-01-08 23:51:11,043 [53   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2019-01-08 23:51:11,055 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 91.0999ms 200 text/css
+INFO  2019-01-08 23:51:11,068 [48   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2019-01-08 23:51:11,085 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 126.3289ms 200 application/javascript
+INFO  2019-01-08 23:51:11,100 [50   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2019-01-08 23:51:11,104 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 152.3833ms 200 application/javascript
+INFO  2019-01-08 23:51:12,291 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/v1/swagger.json  
+INFO  2019-01-08 23:51:12,324 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/favicon-32x32.png  
+INFO  2019-01-08 23:51:12,333 [48   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-01-08 23:51:12,343 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.9327ms 200 image/png
+INFO  2019-01-08 23:51:12,344 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/favicon-16x16.png  
+INFO  2019-01-08 23:51:12,351 [59   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2019-01-08 23:51:12,357 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.9063ms 200 image/png
+INFO  2019-01-08 23:51:12,469 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 215.0371ms 200 application/json;charset=utf-8
+DEBUG 2019-01-08 23:53:38,551 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-08 23:53:38,638 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-08 23:53:38,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,660 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,660 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,660 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,662 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,662 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:38,667 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-08 23:53:38,753 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:53:38,753 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:53:38,753 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:53:38,753 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-08 23:53:39,191 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-08 23:53:40,439 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-08 23:53:40,536 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-08 23:53:40,546 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-08 23:53:40,551 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-08 23:53:40,556 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-08 23:53:40,779 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-08 23:53:40,831 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-08 23:53:40,831 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-08 23:53:40,838 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-08 23:53:40,839 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-08 23:53:40,839 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-08 23:53:40,840 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-08 23:53:40,840 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-08 23:53:40,840 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-08 23:53:40,840 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-08 23:53:40,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-08 23:53:40,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-08 23:53:40,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-08 23:53:40,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-01-08 23:53:46,051 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-08 23:53:46,051 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-01-08 23:53:46,161 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.522ms 200 
+INFO  2019-01-08 23:53:50,784 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+WARN  2019-01-08 23:53:51,231 [5    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-01-08 23:53:51,241 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-08 23:53:51,255 [5    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-08 23:53:51,286 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-08 23:53:51,292 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 500.7634ms
+INFO  2019-01-08 23:53:51,314 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-01-08 23:53:51,318 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5281.2779ms 302 
+INFO  2019-01-08 23:53:51,357 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc)
+INFO  2019-01-08 23:53:55,112 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-01-08 23:53:55,125 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.9533ms.
+INFO  2019-01-08 23:53:55,483 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-01-08 23:53:56,236 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 826.6368ms.
+INFO  2019-01-08 23:53:56,248 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) in 4886.0176ms
+INFO  2019-01-08 23:53:56,338 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=636825884362118785  
+INFO  2019-01-08 23:53:56,343 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5019.7973ms 200 text/html; charset=utf-8
+INFO  2019-01-08 23:53:56,348 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636825884207814158  
+INFO  2019-01-08 23:53:56,349 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636825884207814158  
+INFO  2019-01-08 23:53:56,371 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-01-08 23:53:56,387 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-01-08 23:53:56,392 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-01-08 23:53:56,439 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-01-08 23:53:56,560 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-01-08 23:53:56,579 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 122.5792ms 200 application/javascript
+INFO  2019-01-08 23:53:56,711 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 306.4397ms.
+INFO  2019-01-08 23:53:56,724 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-01-08 23:53:56,739 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 358.7608ms
+INFO  2019-01-08 23:53:56,752 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 394.8354ms 200 application/x-javascript; charset=utf-8
+INFO  2019-01-08 23:53:56,790 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 211.5609ms.
+INFO  2019-01-08 23:53:56,810 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-01-08 23:53:56,820 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 423.6795ms
+INFO  2019-01-08 23:53:56,827 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 488.0069ms 200 application/x-javascript
+INFO  2019-01-08 23:54:15,484 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/index.html  
+INFO  2019-01-08 23:54:15,534 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.2895ms 200 text/html
+INFO  2019-01-08 23:54:16,907 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/v1/swagger.json  
+INFO  2019-01-08 23:54:17,098 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 208.9539ms 200 application/json;charset=utf-8
+DEBUG 2019-01-09 00:40:37,325 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-09 00:40:37,408 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-09 00:40:37,429 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,433 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,433 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,434 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,434 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,434 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,434 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,435 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,435 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,435 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,437 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:37,440 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-09 00:40:37,526 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:40:37,526 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:40:37,526 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:40:37,526 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:40:37,930 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:40:39,315 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-09 00:40:39,408 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-09 00:40:39,419 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-09 00:40:39,424 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-09 00:40:39,429 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-09 00:40:39,671 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-09 00:40:39,731 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-09 00:40:39,731 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-09 00:40:39,743 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-09 00:40:39,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-09 00:40:39,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-09 00:40:39,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-09 00:40:39,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-09 00:40:39,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-09 00:40:39,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-09 00:40:39,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-09 00:40:39,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-09 00:40:39,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-09 00:40:39,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-01-09 00:40:45,276 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-01-09 00:40:45,276 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-09 00:40:45,395 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 112.6029ms 200 
+INFO  2019-01-09 00:40:49,948 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+WARN  2019-01-09 00:40:50,373 [5    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-01-09 00:40:50,383 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-09 00:40:50,400 [5    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-09 00:40:50,431 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-09 00:40:50,441 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 482.2523ms
+INFO  2019-01-09 00:40:50,465 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-01-09 00:40:50,470 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5204.2347ms 302 
+INFO  2019-01-09 00:40:50,511 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc)
+INFO  2019-01-09 00:40:54,306 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-01-09 00:40:54,319 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.1579ms.
+INFO  2019-01-09 00:40:54,659 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-01-09 00:40:55,364 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 771.6469ms.
+INFO  2019-01-09 00:40:55,378 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) in 4860.0958ms
+INFO  2019-01-09 00:40:55,483 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5008.513ms 200 text/html; charset=utf-8
+INFO  2019-01-09 00:40:55,485 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636825912396743127  
+INFO  2019-01-09 00:40:55,487 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636825912396743127  
+INFO  2019-01-09 00:40:55,499 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=636825912553362534  
+INFO  2019-01-09 00:40:55,509 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-01-09 00:40:55,517 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-01-09 00:40:55,528 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-01-09 00:40:55,571 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-01-09 00:40:55,583 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-01-09 00:40:55,598 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.3953ms 200 application/javascript
+INFO  2019-01-09 00:40:55,690 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 168.4729ms.
+INFO  2019-01-09 00:40:55,700 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-01-09 00:40:55,718 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 196.217ms
+INFO  2019-01-09 00:40:55,732 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 233.3459ms 200 application/x-javascript; charset=utf-8
+INFO  2019-01-09 00:40:55,757 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 172.3504ms.
+INFO  2019-01-09 00:40:55,762 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-01-09 00:40:55,766 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 234.5473ms
+INFO  2019-01-09 00:40:55,770 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 285.5585ms 200 application/x-javascript
+INFO  2019-01-09 00:45:43,099 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/index.html  
+INFO  2019-01-09 00:45:43,150 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.6538ms 200 text/html
+INFO  2019-01-09 00:45:44,450 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/v1/swagger.json  
+INFO  2019-01-09 00:45:44,615 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 243.7571ms 200 application/json;charset=utf-8
+INFO  2019-01-09 00:46:30,334 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/index.html  
+INFO  2019-01-09 00:46:30,341 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.9113ms 200 text/html
+INFO  2019-01-09 00:46:31,355 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/v1/swagger.json  
+INFO  2019-01-09 00:46:31,381 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.8281ms 200 application/json;charset=utf-8
+DEBUG 2019-01-09 00:47:29,991 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-09 00:47:30,083 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-09 00:47:30,102 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,108 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,108 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,108 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,109 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,109 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,109 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,109 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,110 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,110 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:30,113 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-09 00:47:30,212 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:47:30,212 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:47:30,212 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:47:30,212 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:47:30,648 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:47:32,062 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-09 00:47:32,155 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-09 00:47:32,167 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-09 00:47:32,172 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-09 00:47:32,177 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-09 00:47:32,454 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-09 00:47:32,517 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-09 00:47:32,517 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-09 00:47:32,528 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-09 00:47:32,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-09 00:47:32,530 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-09 00:47:32,531 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-09 00:47:32,531 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-09 00:47:32,531 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-09 00:47:32,531 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-09 00:47:32,532 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-09 00:47:32,532 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-09 00:47:32,532 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-09 00:47:32,532 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-01-09 00:47:39,226 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-01-09 00:47:39,226 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-09 00:47:39,343 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 138.6925ms 200 
+INFO  2019-01-09 00:47:44,107 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+WARN  2019-01-09 00:47:44,533 [10   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-01-09 00:47:44,543 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-09 00:47:44,557 [10   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-09 00:47:44,585 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-09 00:47:44,591 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 476.2843ms
+INFO  2019-01-09 00:47:44,614 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-01-09 00:47:44,618 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5425.8062ms 302 
+INFO  2019-01-09 00:47:44,658 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc)
+INFO  2019-01-09 00:47:48,361 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-01-09 00:47:48,374 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.1239ms.
+INFO  2019-01-09 00:47:48,744 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-01-09 00:47:49,564 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 914.5528ms.
+INFO  2019-01-09 00:47:49,575 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) in 4912.9833ms
+INFO  2019-01-09 00:47:49,670 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636825916524574991  
+INFO  2019-01-09 00:47:49,674 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=636825916695347127  
+INFO  2019-01-09 00:47:49,678 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5063.0376ms 200 text/html; charset=utf-8
+INFO  2019-01-09 00:47:49,683 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636825916524574991  
+INFO  2019-01-09 00:47:49,697 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-01-09 00:47:49,705 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-01-09 00:47:49,707 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-01-09 00:47:49,751 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-01-09 00:47:49,760 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.4604ms 200 application/javascript
+INFO  2019-01-09 00:47:49,772 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-01-09 00:47:49,898 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 181.7715ms.
+INFO  2019-01-09 00:47:49,922 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-01-09 00:47:49,936 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 229.2197ms
+INFO  2019-01-09 00:47:49,947 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 258.8663ms 200 application/x-javascript; charset=utf-8
+INFO  2019-01-09 00:47:49,967 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 190.2945ms.
+INFO  2019-01-09 00:47:49,970 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-01-09 00:47:49,974 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 265.463ms
+INFO  2019-01-09 00:47:49,988 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 312.7006ms 200 application/x-javascript
+INFO  2019-01-09 00:47:56,407 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/index.html  
+INFO  2019-01-09 00:47:56,468 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 60.1998ms 200 text/html
+INFO  2019-01-09 00:47:57,107 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/v1/swagger.json  
+INFO  2019-01-09 00:47:57,291 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 234.3459ms 200 application/json;charset=utf-8
+DEBUG 2019-01-09 00:52:00,394 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-09 00:52:00,509 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-09 00:52:00,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.Web.Startup.eMMAWebMvcModule, eMMA.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,539 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAWebCoreModule, eMMA.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,539 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMAApplicationModule, eMMA.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,539 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.eMMACoreModule, eMMA.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,540 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,540 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,540 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,541 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,541 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: eMMA.EntityFrameworkCore.eMMAEntityFrameworkModule, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,541 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:00,547 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-09 00:52:00,706 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:52:00,706 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:52:00,706 [1    ] o.Configuration.LanguageManagementConfig - Converted eMMA (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:52:00,706 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-09 00:52:01,120 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: eMMA.EntityFrameworkCore.eMMADbContext, eMMA.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-09 00:52:02,392 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-09 00:52:02,480 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-09 00:52:02,492 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-09 00:52:02,497 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: eMMA
+DEBUG 2019-01-09 00:52:02,502 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-09 00:52:02,725 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-09 00:52:02,776 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-01-09 00:52:02,776 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-09 00:52:02,784 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.CreateUserDto
+DEBUG 2019-01-09 00:52:02,785 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Users.Dto.UserDto
+DEBUG 2019-01-09 00:52:02,785 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-09 00:52:02,785 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-09 00:52:02,785 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-09 00:52:02,785 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.PermissionDto
+DEBUG 2019-01-09 00:52:02,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Roles.Dto.RoleDto
+DEBUG 2019-01-09 00:52:02,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-09 00:52:02,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-09 00:52:02,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-01-09 00:52:02,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - eMMA.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-01-09 00:52:07,886 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-01-09 00:52:07,886 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-01-09 00:52:08,001 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 115.8957ms 200 
+INFO  2019-01-09 00:52:12,595 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc)
+WARN  2019-01-09 00:52:13,027 [5    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 43
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 103
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 57
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-01-09 00:52:13,037 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-01-09 00:52:13,051 [5    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-01-09 00:52:13,077 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-01-09 00:52:13,083 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.HomeController.Index (eMMA.Web.Mvc) in 481.7592ms
+INFO  2019-01-09 00:52:13,110 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-01-09 00:52:13,113 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5237.2355ms 302 
+INFO  2019-01-09 00:52:13,152 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc)
+INFO  2019-01-09 00:52:16,910 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-01-09 00:52:16,922 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.2863ms.
+INFO  2019-01-09 00:52:17,275 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-01-09 00:52:17,994 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 782.6178ms.
+INFO  2019-01-09 00:52:18,006 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action eMMA.Web.Controllers.AccountController.Login (eMMA.Web.Mvc) in 4848.5646ms
+INFO  2019-01-09 00:52:18,173 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4971.588ms 200 text/html; charset=utf-8
+INFO  2019-01-09 00:52:18,203 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636825919227276669  
+INFO  2019-01-09 00:52:18,238 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=636825919379674387  
+INFO  2019-01-09 00:52:18,240 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636825919227276669  
+INFO  2019-01-09 00:52:18,255 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-01-09 00:52:18,274 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-01-09 00:52:18,283 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - Validation state: Valid
+INFO  2019-01-09 00:52:18,296 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\cristian\Desktop\Net\OnPoint\git\eMMA\4.2.1\aspnet-core\src\eMMA.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-01-09 00:52:18,303 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 110.6879ms 200 application/javascript
+INFO  2019-01-09 00:52:18,308 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-01-09 00:52:18,462 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 170.1232ms.
+INFO  2019-01-09 00:52:18,509 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 180.3797ms.
+INFO  2019-01-09 00:52:18,516 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-01-09 00:52:18,519 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-01-09 00:52:18,541 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 249.5947ms
+INFO  2019-01-09 00:52:18,552 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 269.8073ms
+INFO  2019-01-09 00:52:18,555 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 370.7972ms 200 application/x-javascript; charset=utf-8
+INFO  2019-01-09 00:52:18,557 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 386.9069ms 200 application/x-javascript
+INFO  2019-01-09 00:52:24,863 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/index.html  
+INFO  2019-01-09 00:52:24,912 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 51.3499ms 200 text/html
+INFO  2019-01-09 00:52:25,549 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/swagger/v1/swagger.json  
+INFO  2019-01-09 00:52:25,760 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 210.7463ms 200 application/json;charset=utf-8
