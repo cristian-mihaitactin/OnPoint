@@ -24,6 +24,20 @@ namespace eMMA.Authorization.Roles
                     MultiTenancySides.Tenant
                 )
             );
+
+            roleManagementConfig.StaticRoles.Add(
+                new StaticRoleDefinition(
+                    StaticRoleNames.Tenants.Student,
+                    MultiTenancySides.Tenant
+                )
+            );
+
+            roleManagementConfig.StaticRoles.Add(
+                new StaticRoleDefinition(
+                    StaticRoleNames.Tenants.Professor,
+                    MultiTenancySides.Tenant
+                )
+            );
         }
     }
 }

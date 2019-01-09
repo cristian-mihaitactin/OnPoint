@@ -10,6 +10,9 @@ namespace eMMA.Authorization.Roles
         public static class Tenants
         {
             public const string Admin = "Admin";
+            public const string Professor = "Professor";
+            public const string Student = "Student";
+
         }
     }
 }
