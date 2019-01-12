@@ -19,7 +19,7 @@ namespace eMMA.Entities
         [Column("Id")]
         public Guid Id { get; set; }
         public string Title {get; set;}
-        public int Credits {get; private set;}
+        public int Credits {get; set;}
     
         public ICollection<LaboratoryInstance> Labs {get;set;}
         public ICollection<SeminarInstance> Seminars {get;set;}
