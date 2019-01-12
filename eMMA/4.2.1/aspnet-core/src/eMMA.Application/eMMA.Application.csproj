@@ -15,5 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eMMA.Core\eMMA.Core.csproj" />
+    <ProjectReference Include="..\eMMA.Entities\eMMA.Entities.csproj" />
+    <ProjectReference Include="..\eMMA.EntityFrameworkCore\eMMA.EntityFrameworkCore.csproj" />
   </ItemGroup>
 </Project>

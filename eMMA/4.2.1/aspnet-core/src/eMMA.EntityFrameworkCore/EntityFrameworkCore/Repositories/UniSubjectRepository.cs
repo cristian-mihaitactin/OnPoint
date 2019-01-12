@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
 using eMMA.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -39,6 +41,11 @@ namespace eMMA.EntityFrameworkCore.Repositories
         public override IQueryable<UniSubject> GetAll()
         {
             return _context.UniSubjects;
+        }
+
+        public async override Task<List<UniSubject>> GetAllListAsync()
+        {
+            return _context.UniSubjects.ToList();
         }
 
         public override UniSubject GetSingle(Guid subjectId)

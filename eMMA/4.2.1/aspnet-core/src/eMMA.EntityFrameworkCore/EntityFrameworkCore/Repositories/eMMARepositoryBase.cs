@@ -5,6 +5,7 @@ using Abp.EntityFrameworkCore.Repositories;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace eMMA.EntityFrameworkCore.Repositories
 {
@@ -23,6 +24,7 @@ namespace eMMA.EntityFrameworkCore.Repositories
 
         // Add your common methods for all repositories
         public abstract IQueryable<TEntity> GetAll();
+
         public abstract TEntity GetSingle(TPrimaryKey personId);
         public abstract IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> predicate);
         public abstract void Add(TEntity entity);
