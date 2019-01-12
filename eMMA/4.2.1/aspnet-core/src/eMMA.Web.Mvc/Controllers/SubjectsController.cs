@@ -1,15 +1,29 @@
 ﻿using Abp.AspNetCore.Mvc.Authorization;
 using eMMA.Controllers;
+using eMMA.Uni.UniSubject;
+using eMMA.Web.Models.UniSubjects;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace eMMA.Web.Controllers
 {
     [AbpMvcAuthorize]
     public class SubjectsController : eMMAControllerBase
     {
-        public ActionResult Index()
+        private readonly IUniSubjectAppService _subjectsAppService;
+
+        public SubjectsController(IUniSubjectAppService subjectsAppService)
         {
-            return View();
+            _subjectsAppService = subjectsAppService;
+        }
+        public async Task<ActionResult> Index()
+        {
+            var subjects = (await _subjectsAppService.GetAllUniSubjects()).Items;
+            var model = new UniSubjectListViewModel
+            {
+                UniSubjects = subjects
+            };
+            return View(model);
         }
     }
 }

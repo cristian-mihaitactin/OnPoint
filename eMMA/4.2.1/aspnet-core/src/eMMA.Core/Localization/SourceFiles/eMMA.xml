@@ -93,5 +93,6 @@
     <text name="Settings">Settings</text>
     <text name="AllSubjects">All Subjects</text>
     <text name="MySubjects">My Subjects</text>
+    <text name="Assign">Assign</text>
   </texts>
 </localizationDictionary>

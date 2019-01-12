@@ -5,6 +5,8 @@ using eMMA.Authorization.Users;
 using eMMA.MultiTenancy;
 using eMMA.Entities;
 using User = eMMA.Authorization.Users.User;
+using Abp.Domain.Repositories;
+using eMMA.EntityFrameworkCore.Repositories;
 
 namespace eMMA.EntityFrameworkCore
 {
