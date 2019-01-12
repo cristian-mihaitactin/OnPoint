@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
 using eMMA.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -16,24 +18,50 @@ namespace eMMA.EntityFrameworkCore.Repositories
             _context = context.GetDbContext();
         }
 
-        public override void Add(SeminarInstance entity)
+
+        public override SeminarInstance Insert(SeminarInstance entity)
         {
-            _context.Seminars.Add(entity);
+            var dbEntity = _context.Seminars.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<SeminarInstance> InsertAsync(SeminarInstance entity)
+        {
+            var dbEntity = await _context.Seminars.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(SeminarInstance entity)
         {
-            _context.Seminars.Remove(entity);
+            var dbEntity = _context.Seminars.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(SeminarInstance entity)
+        public override SeminarInstance Update(SeminarInstance entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.Seminars.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<SeminarInstance> FindBy(Expression<Func<SeminarInstance, bool>> predicate)
+        public override List<SeminarInstance> GetAllList(Expression<Func<SeminarInstance, bool>> predicate)
         {
-            return _context.Seminars.Where(predicate);
+            return _context.Seminars.Where(predicate).ToList();
+        }
+
+        public override Task<List<SeminarInstance>> GetAllListAsync(Expression<Func<SeminarInstance, bool>> predicate)
+        {
+            return _context.Seminars.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<SeminarInstance> GetAll()
@@ -41,9 +69,19 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return _context.Seminars;
         }
 
-        public override SeminarInstance GetSingle(Guid seminarId)
+        public override Task<List<SeminarInstance>> GetAllListAsync()
+        {
+            return _context.Seminars.ToListAsync();
+        }
+
+        public override SeminarInstance Get(Guid seminarId)
         {
             return _context.Seminars.Find(seminarId);
+        }
+
+        public override Task<SeminarInstance> GetAsync(Guid seminarId)
+        {
+            return _context.Seminars.FindAsync(seminarId);
         }
 
         public override void Save()

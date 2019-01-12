@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
 using eMMA.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -15,25 +17,49 @@ namespace eMMA.EntityFrameworkCore.Repositories
         {
             _context = context.GetDbContext();
         }
-
-        public override void Add(Mark entity)
+        public override Mark Insert(Mark entity)
         {
-            _context.Marks.Add(entity);
+            var dbEntity = _context.Marks.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<Mark> InsertAsync(Mark entity)
+        {
+            var dbEntity = await _context.Marks.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(Mark entity)
         {
-            _context.Marks.Remove(entity);
+            var dbEntity = _context.Marks.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(Mark entity)
+        public override Mark Update(Mark entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.Marks.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<Mark> FindBy(Expression<Func<Mark, bool>> predicate)
+        public override List<Mark> GetAllList(Expression<Func<Mark, bool>> predicate)
         {
-            return _context.Marks.Where(predicate);
+            return _context.Marks.Where(predicate).ToList();
+        }
+
+        public override Task<List<Mark>> GetAllListAsync(Expression<Func<Mark, bool>> predicate)
+        {
+            return _context.Marks.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<Mark> GetAll()
@@ -41,9 +67,19 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return _context.Marks;
         }
 
-        public override Mark GetSingle(Guid studentId)
+        public override Task<List<Mark>> GetAllListAsync()
         {
-            return _context.Marks.Find(studentId);
+            return _context.Marks.ToListAsync();
+        }
+
+        public override Mark Get(Guid markId)
+        {
+            return _context.Marks.Find(markId);
+        }
+
+        public override Task<Mark> GetAsync(Guid markId)
+        {
+            return _context.Marks.FindAsync(markId);
         }
 
         public override void Save()

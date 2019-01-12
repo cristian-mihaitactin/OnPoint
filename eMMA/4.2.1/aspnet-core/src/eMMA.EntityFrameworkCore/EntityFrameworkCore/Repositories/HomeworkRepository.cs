@@ -20,24 +20,49 @@ namespace eMMA.EntityFrameworkCore.Repositories
             _context = context.GetDbContext();
         }
 
-        public override void Add(Homework entity)
+        public override Homework Insert(Homework entity)
         {
-            _context.Homeworks.Add(entity);
+            var dbEntity = _context.Homeworks.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<Homework> InsertAsync(Homework entity)
+        {
+            var dbEntity = await _context.Homeworks.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(Homework entity)
         {
-            _context.Homeworks.Remove(entity);
+            var dbEntity = _context.Homeworks.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(Homework entity)
+        public override Homework Update(Homework entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.Homeworks.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<Homework> FindBy(Expression<Func<Homework, bool>> predicate)
+        public override List<Homework> GetAllList(Expression<Func<Homework, bool>> predicate)
         {
-            return _context.Homeworks.Where(predicate);
+            return _context.Homeworks.Where(predicate).ToList();
+        }
+
+        public override Task<List<Homework>> GetAllListAsync(Expression<Func<Homework, bool>> predicate)
+        {
+            return _context.Homeworks.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<Homework> GetAll()
@@ -45,11 +70,21 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return _context.Homeworks;
         }
 
-        public override Homework GetSingle(Guid personId)
+        public override Task<List<Homework>> GetAllListAsync()
         {
-            return _context.Homeworks.Find(personId);
+            return _context.Homeworks.ToListAsync();
         }
-        
+
+        public override Homework Get(Guid hwId)
+        {
+            return _context.Homeworks.Find(hwId);
+        }
+
+        public override Task<Homework> GetAsync(Guid hwId)
+        {
+            return _context.Homeworks.FindAsync(hwId);
+        }
+
         public override void Save()
         {
             _context.SaveChanges();
