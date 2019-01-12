@@ -18,24 +18,49 @@ namespace eMMA.EntityFrameworkCore.Repositories
             _context = context.GetDbContext();
         }
 
-        public override void Add(UniSubject entity)
+        public override UniSubject Insert(UniSubject entity)
         {
-            _context.UniSubjects.Add(entity);
+            var dbEntity = _context.UniSubjects.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<UniSubject> InsertAsync(UniSubject entity)
+        {
+            var dbEntity = await _context.UniSubjects.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(UniSubject entity)
         {
-            _context.UniSubjects.Remove(entity);
+            var dbEntity = _context.UniSubjects.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(UniSubject entity)
+        public override UniSubject Update(UniSubject entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.UniSubjects.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<UniSubject> FindBy(Expression<Func<UniSubject, bool>> predicate)
+        public override List<UniSubject> GetAllList(Expression<Func<UniSubject, bool>> predicate)
         {
-            return _context.UniSubjects.Where(predicate);
+            return _context.UniSubjects.Where(predicate).ToList();
+        }
+
+        public override Task<List<UniSubject>> GetAllListAsync(Expression<Func<UniSubject, bool>> predicate)
+        {
+            return _context.UniSubjects.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<UniSubject> GetAll()
@@ -43,19 +68,25 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return _context.UniSubjects;
         }
 
-        public async override Task<List<UniSubject>> GetAllListAsync()
+        public override Task<List<UniSubject>> GetAllListAsync()
         {
-            return _context.UniSubjects.ToList();
+            return _context.UniSubjects.ToListAsync();
         }
 
-        public override UniSubject GetSingle(Guid subjectId)
+        public override UniSubject Get(Guid subjectId)
         {
             return _context.UniSubjects.Find(subjectId);
+        }
+        
+        public override Task<UniSubject> GetAsync(Guid subjectId)
+        {
+            return _context.UniSubjects.FindAsync(subjectId);
         }
 
         public override void Save()
         {
             _context.SaveChanges();
         }
+        
     }
 }
