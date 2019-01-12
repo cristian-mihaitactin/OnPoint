@@ -36,7 +36,7 @@ namespace eMMA.EntityFrameworkCore.Seed.UniSubjects
                 Title = "Introducere in .NET",
                 Credits = 4
             };
-            var subject = _context.UniSubjects.FirstOrDefault(r => r.Id == subjectNET.Id);
+            var subject = _context.UniSubjects.FirstOrDefault(r => r.Title == subjectNET.Title);
             if(subject == null)
             {
                 _context.UniSubjects.Add(subjectNET);
@@ -49,7 +49,7 @@ namespace eMMA.EntityFrameworkCore.Seed.UniSubjects
                 Title = "Invatare Automata",
                 Credits = 6
             };
-            var subject2 = _context.UniSubjects.FirstOrDefault(r => r.Id == subjectML.Id);
+            var subject2 = _context.UniSubjects.FirstOrDefault(r => r.Title == subjectML.Title);
             if (subject2 == null)
             {
                 _context.UniSubjects.Add(subjectML);
@@ -62,7 +62,7 @@ namespace eMMA.EntityFrameworkCore.Seed.UniSubjects
                 Title = "Python",
                 Credits = 4
             };
-            var subject3 = _context.UniSubjects.FirstOrDefault(r => r.Id == subjectPython.Id);
+            var subject3 = _context.UniSubjects.FirstOrDefault(r => r.Title == subjectPython.Title);
             if (subject3 == null)
             {
                 _context.UniSubjects.Add(subjectPython);
@@ -76,7 +76,7 @@ namespace eMMA.EntityFrameworkCore.Seed.UniSubjects
                 Credits = 6
             
             };
-            var subject4 = _context.UniSubjects.FirstOrDefault(r => r.Id == subjectIA.Id);
+            var subject4 = _context.UniSubjects.FirstOrDefault(r => r.Title == subjectIA.Title);
             if (subject4 == null)
             {
                 _context.UniSubjects.Add(subjectIA);

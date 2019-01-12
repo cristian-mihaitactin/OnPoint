@@ -6,6 +6,9 @@ using Abp.Reflection.Extensions;
 using eMMA.Configuration;
 using eMMA.EntityFrameworkCore;
 using eMMA.Migrator.DependencyInjection;
+using eMMA.Entities;
+using Abp.Domain.Repositories;
+using System;
 
 namespace eMMA.Migrator
 {

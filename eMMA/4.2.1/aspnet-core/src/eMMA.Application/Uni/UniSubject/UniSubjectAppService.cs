@@ -14,7 +14,7 @@ namespace eMMA.Uni.UniSubject
 {
     public class UniSubjectAppService : AsyncCrudAppService<Entities.UniSubject, UniSubjectDto, Guid, PagedResultRequestDto, UniSubjectDto, UniSubjectDto>, IUniSubjectAppService
     {
-        public UniSubjectAppService(eMMARepositoryBase<Entities.UniSubject, Guid> repository)
+        public UniSubjectAppService(IRepository<Entities.UniSubject, Guid> repository)
                 : base(repository)
         {
             
