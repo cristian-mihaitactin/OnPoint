@@ -35,10 +35,12 @@ namespace eMMA.Uni.UniSubject
             return  new ListResultDto<UniSubjectDto>(listResultDto);
         }
 
-        public override async Task<Entities.UniSubject> GetSubjectById(Guid id)
+        public Task<Entities.UniSubject> GetSubjectByIdAsync(Guid id)
         {
-            GetEntityByIdAsync(id);
+            return GetEntityByIdAsync(id);
         }
+
+
         protected override async Task<Entities.UniSubject> GetEntityByIdAsync(Guid id)
         {
             var subject = await Repository.GetAsync(id);
