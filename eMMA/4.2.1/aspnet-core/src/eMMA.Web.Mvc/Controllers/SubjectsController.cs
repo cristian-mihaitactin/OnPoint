@@ -1,4 +1,5 @@
-﻿using Abp.AspNetCore.Mvc.Authorization;
+﻿using System;
+using Abp.AspNetCore.Mvc.Authorization;
 using eMMA.Controllers;
 using eMMA.Uni.UniSubject;
 using eMMA.Web.Models.UniSubjects;
@@ -19,10 +20,16 @@ namespace eMMA.Web.Controllers
         public async Task<ActionResult> Index()
         {
             var subjects = (await _subjectsAppService.GetAllUniSubjects()).Items;
-            var model = new UniSubjectListViewModel
+            var model = new UniSubjectListViewModel()
             {
                 UniSubjects = subjects
             };
+            return View(model);
+        }
+        public async Task<ActionResult> Details(Guid uniSubjectId)
+        {
+            var subject = (await _subjectsAppService.GetSubjectByIdAsync(uniSubjectId));
+            var model = ObjectMapper.Map<UniSubjectDetailsViewModel>(subject);
             return View(model);
         }
     }
