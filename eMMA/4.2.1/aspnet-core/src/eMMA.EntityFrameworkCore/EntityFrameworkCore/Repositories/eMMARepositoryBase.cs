@@ -24,6 +24,29 @@ namespace eMMA.EntityFrameworkCore.Repositories
 
         // Add your common methods for all repositories
         public abstract void Save();
+
+        public virtual TEntity GetSingle(TPrimaryKey personId)
+        {
+            return null;
+        }
+
+        public virtual IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> predicate)
+        {
+            return null;
+        }
+
+        public virtual void Add(TEntity entity)
+        {
+
+        }
+        public virtual void Delete(TEntity entity)
+        {
+
+        }
+        public virtual void Edit(TEntity entity)
+        {
+
+        }
     }
 
     /// <summary>
