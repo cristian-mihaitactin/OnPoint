@@ -7,6 +7,7 @@ using Abp.EntityFrameworkCore.Uow;
 using Abp.MultiTenancy;
 using eMMA.EntityFrameworkCore.Seed.Host;
 using eMMA.EntityFrameworkCore.Seed.Tenants;
+using eMMA.EntityFrameworkCore.Seed.UniSubjects;
 
 namespace eMMA.EntityFrameworkCore.Seed
 {
@@ -27,6 +28,7 @@ namespace eMMA.EntityFrameworkCore.Seed
             // Default tenant seed (in host database).
             new DefaultTenantBuilder(context).Create();
             new TenantRoleAndUserBuilder(context, 1).Create();
+            new UniSubjectBuilder(context).Create();
         }
 
         private static void WithDbContext<TDbContext>(IIocResolver iocResolver, Action<TDbContext> contextAction)
