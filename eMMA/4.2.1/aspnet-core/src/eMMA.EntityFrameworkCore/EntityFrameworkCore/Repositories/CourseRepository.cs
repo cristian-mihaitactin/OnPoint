@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
 using eMMA.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -16,24 +18,49 @@ namespace eMMA.EntityFrameworkCore.Repositories
             _context = context.GetDbContext();
         }
 
-        public override void Add(CourseInstance entity)
+        public override CourseInstance Insert(CourseInstance entity)
         {
-            _context.Courses.Add(entity);
+            var dbEntity = _context.Courses.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<CourseInstance> InsertAsync(CourseInstance entity)
+        {
+            var dbEntity = await _context.Courses.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(CourseInstance entity)
         {
-            _context.Courses.Remove(entity);
+            var dbEntity = _context.Courses.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(CourseInstance entity)
+        public override CourseInstance Update(CourseInstance entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.Courses.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<CourseInstance> FindBy(Expression<Func<CourseInstance, bool>> predicate)
+        public override List<CourseInstance> GetAllList(Expression<Func<CourseInstance, bool>> predicate)
         {
-            return _context.Courses.Where(predicate);
+            return _context.Courses.Where(predicate).ToList();
+        }
+
+        public override Task<List<CourseInstance>> GetAllListAsync(Expression<Func<CourseInstance, bool>> predicate)
+        {
+            return _context.Courses.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<CourseInstance> GetAll()
@@ -41,9 +68,19 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return _context.Courses;
         }
 
-        public override CourseInstance GetSingle(Guid courseId)
+        public override Task<List<CourseInstance>> GetAllListAsync()
+        {
+            return _context.Courses.ToListAsync();
+        }
+
+        public override CourseInstance Get(Guid courseId)
         {
             return _context.Courses.Find(courseId);
+        }
+
+        public override Task<CourseInstance> GetAsync(Guid courseId)
+        {
+            return _context.Courses.FindAsync(courseId);
         }
 
         public override void Save()

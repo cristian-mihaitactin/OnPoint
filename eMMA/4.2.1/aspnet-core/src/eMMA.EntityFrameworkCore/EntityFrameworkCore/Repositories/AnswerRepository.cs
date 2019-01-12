@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
 using eMMA.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -16,24 +18,49 @@ namespace eMMA.EntityFrameworkCore.Repositories
             _context = context.GetDbContext();
         }
 
-        public override void Add(Answer entity)
+        public override Answer Insert(Answer entity)
         {
-            _context.Answers.Add(entity);
+            var dbEntity = _context.Answers.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<Answer> InsertAsync(Answer entity)
+        {
+            var dbEntity = await _context.Answers.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(Answer entity)
         {
-            _context.Answers.Remove(entity);
+            var dbEntity = _context.Answers.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(Answer entity)
+        public override Answer Update(Answer entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.Answers.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<Answer> FindBy(Expression<Func<Answer, bool>> predicate)
+        public override List<Answer> GetAllList(Expression<Func<Answer, bool>> predicate)
         {
-            return _context.Answers.Where(predicate);
+            return _context.Answers.Where(predicate).ToList();
+        }
+
+        public override Task<List<Answer>> GetAllListAsync(Expression<Func<Answer, bool>> predicate)
+        {
+            return _context.Answers.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<Answer> GetAll()
@@ -41,14 +68,25 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return _context.Answers;
         }
 
-        public override Answer GetSingle(Guid answerId)
+        public override Task<List<Answer>> GetAllListAsync()
+        {
+            return _context.Answers.ToListAsync();
+        }
+
+        public override Answer Get(Guid answerId)
         {
             return _context.Answers.Find(answerId);
+        }
+
+        public override Task<Answer> GetAsync(Guid answerId)
+        {
+            return _context.Answers.FindAsync(answerId);
         }
 
         public override void Save()
         {
             _context.SaveChanges();
         }
+
     }
 }

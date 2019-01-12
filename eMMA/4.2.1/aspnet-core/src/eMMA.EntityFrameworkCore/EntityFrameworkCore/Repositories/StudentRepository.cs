@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
 using eMMA.Entities;
 using eMMA.EntityFrameworkCore;
@@ -17,25 +19,49 @@ namespace BusinessLayer.Repositories
         {
             _context = context.GetDbContext();
         }
-
-        public override void Add(Student entity)
+        public override Student Insert(Student entity)
         {
-            _context.Students.Add(entity);
+            var dbEntity = _context.Students.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<Student> InsertAsync(Student entity)
+        {
+            var dbEntity = await _context.Students.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(Student entity)
         {
-            _context.Students.Remove(entity);
+            var dbEntity = _context.Students.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(Student entity)
+        public override Student Update(Student entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.Students.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<Student> FindBy(Expression<Func<Student, bool>> predicate)
+        public override List<Student> GetAllList(Expression<Func<Student, bool>> predicate)
         {
-            return _context.Students.Where(predicate);
+            return _context.Students.Where(predicate).ToList();
+        }
+
+        public override Task<List<Student>> GetAllListAsync(Expression<Func<Student, bool>> predicate)
+        {
+            return _context.Students.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<Student> GetAll()
@@ -43,14 +69,25 @@ namespace BusinessLayer.Repositories
             return _context.Students;
         }
 
-        public override Student GetSingle(Guid personId)
+        public override Task<List<Student>> GetAllListAsync()
         {
-            return _context.Students.Find(personId);
+            return _context.Students.ToListAsync();
+        }
+
+        public override Student Get(Guid studentId)
+        {
+            return _context.Students.Find(studentId);
+        }
+
+        public override Task<Student> GetAsync(Guid studentId)
+        {
+            return _context.Students.FindAsync(studentId);
         }
 
         public override void Save()
         {
             _context.SaveChanges();
         }
+
     }
 }

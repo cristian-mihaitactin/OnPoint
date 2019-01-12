@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
 using eMMA.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -16,24 +18,49 @@ namespace eMMA.EntityFrameworkCore.Repositories
             _context = context.GetDbContext();
         }
 
-        public override void Add(File entity)
+        public override File Insert(File entity)
         {
-            _context.Files.Add(entity);
+            var dbEntity = _context.Files.Add(entity);
+            dbEntity.State = EntityState.Added;
+            Save();
+
+            return dbEntity.Entity;
+        }
+
+        public override async Task<File> InsertAsync(File entity)
+        {
+            var dbEntity = await _context.Files.AddAsync(entity);
+            dbEntity.State = EntityState.Added;
+
+            Save();
+
+            return dbEntity.Entity;
         }
 
         public override void Delete(File entity)
         {
-            _context.Files.Remove(entity);
+            var dbEntity = _context.Files.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
         }
 
-        public override void Edit(File entity)
+        public override File Update(File entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            var dbEntity = _context.Files.Update(entity);
+            dbEntity.State = EntityState.Modified;
+            Save();
+
+            return dbEntity.Entity;
         }
 
-        public override IQueryable<File> FindBy(Expression<Func<File, bool>> predicate)
+        public override List<File> GetAllList(Expression<Func<File, bool>> predicate)
         {
-            return _context.Files.Where(predicate);
+            return _context.Files.Where(predicate).ToList();
+        }
+
+        public override Task<List<File>> GetAllListAsync(Expression<Func<File, bool>> predicate)
+        {
+            return _context.Files.Where(predicate).ToListAsync();
         }
 
         public override IQueryable<File> GetAll()
@@ -41,9 +68,19 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return _context.Files;
         }
 
-        public override File GetSingle(Guid idFile)
+        public override Task<List<File>> GetAllListAsync()
         {
-            return _context.Files.Find(idFile);
+            return _context.Files.ToListAsync();
+        }
+
+        public override File Get(Guid fileId)
+        {
+            return _context.Files.Find(fileId);
+        }
+
+        public override Task<File> GetAsync(Guid fileId)
+        {
+            return _context.Files.FindAsync(fileId);
         }
 
         public override void Save()
