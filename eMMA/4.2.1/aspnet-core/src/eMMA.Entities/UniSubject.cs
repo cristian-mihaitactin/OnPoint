@@ -20,7 +20,8 @@ namespace eMMA.Entities
         public Guid Id { get; set; }
         public string Title {get; set;}
         public int Credits {get; set;}
-    
+        public string Description { get; set; }
+
         public ICollection<LaboratoryInstance> Labs {get;set;}
         public ICollection<SeminarInstance> Seminars {get;set;}
         public ICollection<CourseInstance> Courses {get;set;}

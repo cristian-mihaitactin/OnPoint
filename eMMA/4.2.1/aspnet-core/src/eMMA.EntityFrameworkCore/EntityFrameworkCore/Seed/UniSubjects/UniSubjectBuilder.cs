@@ -47,7 +47,8 @@ namespace eMMA.EntityFrameworkCore.Seed.UniSubjects
             {
                 Id = new Guid(),
                 Title = "Invatare Automata",
-                Credits = 6
+                Credits = 6,
+                Description = "Invata automat."
             };
             var subject2 = _context.UniSubjects.FirstOrDefault(r => r.Title == subjectML.Title);
             if (subject2 == null)
@@ -60,7 +61,8 @@ namespace eMMA.EntityFrameworkCore.Seed.UniSubjects
             {
                 Id = new Guid(),
                 Title = "Python",
-                Credits = 4
+                Credits = 4,
+                Description = "Cum sa pescuiesti pesti"
             };
             var subject3 = _context.UniSubjects.FirstOrDefault(r => r.Title == subjectPython.Title);
             if (subject3 == null)
@@ -73,7 +75,8 @@ namespace eMMA.EntityFrameworkCore.Seed.UniSubjects
             {
                 Id = new Guid(),
                 Title = "Inteligenta artificiala",
-                Credits = 6
+                Credits = 6,
+                Description = "Invata si mai automat decat automat"
             
             };
             var subject4 = _context.UniSubjects.FirstOrDefault(r => r.Title == subjectIA.Title);

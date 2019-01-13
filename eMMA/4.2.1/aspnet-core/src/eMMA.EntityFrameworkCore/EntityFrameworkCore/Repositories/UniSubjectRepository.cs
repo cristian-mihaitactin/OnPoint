@@ -37,6 +37,17 @@ namespace eMMA.EntityFrameworkCore.Repositories
             return dbEntity.Entity;
         }
 
+        public override void Delete(Guid entityId)
+        {
+            var entity = _context.UniSubjects.Find(entityId);
+            if (entity == null) return;
+
+            var dbEntity = _context.UniSubjects.Remove(entity);
+            dbEntity.State = EntityState.Deleted;
+            Save();
+
+        }
+
         public override void Delete(UniSubject entity)
         {
             var dbEntity = _context.UniSubjects.Remove(entity);
