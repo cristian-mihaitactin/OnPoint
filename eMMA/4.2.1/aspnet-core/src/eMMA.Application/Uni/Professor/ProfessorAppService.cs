@@ -68,7 +68,14 @@ namespace eMMA.Uni.Professor
             var profList = await Repository.GetAllListAsync(p => p.UserId == id);
 
             var prof = profList.FirstOrDefault();
+            //get subjects
+            var subjects = await _professorUniSubjectsRepository.GetAllListAsync(x => x.ProfessorId == prof.Id);
+            if (prof != null && subjects != null)
+            {
+                prof.ObjectList = subjects;
+            }
             return prof;
+
         }
     }
 }

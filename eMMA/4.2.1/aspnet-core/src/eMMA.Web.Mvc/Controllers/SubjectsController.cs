@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Abp.AspNetCore.Mvc.Authorization;
 using eMMA.Controllers;
 using eMMA.Uni.UniSubject;
@@ -13,6 +14,7 @@ using eMMA.Users;
 using eMMA.Entities;
 using eMMA.Uni.Professor;
 using eMMA.Uni.Professor.Dto;
+using eMMA.Uni.Students;
 
 namespace eMMA.Web.Controllers
 {
@@ -22,13 +24,16 @@ namespace eMMA.Web.Controllers
         private readonly IUniSubjectAppService _subjectsAppService;
         //private readonly IUserAppService _userAppService;
         private readonly IProfessorAppService _professorAppService;
+        private readonly IStudentAppService _studentAppService;
 
 
         public SubjectsController(IUniSubjectAppService subjectsAppService,
-            IProfessorAppService professorAppService)
+            IProfessorAppService professorAppService
+            , IStudentAppService studentAppService)
         {
             _subjectsAppService = subjectsAppService;
             _professorAppService = professorAppService;
+            _studentAppService = studentAppService;
         }
         public async Task<ActionResult> Index()
         {
@@ -97,6 +102,46 @@ namespace eMMA.Web.Controllers
             //_subjectsAppService.Update(dto);
             _professorAppService.UpdateSync(profDto);
 
+        }
+
+        public async Task<ActionResult> MySubjects()
+        {
+            //get user
+            var userId = User.Identity.GetUserId();
+
+            if (!userId.HasValue)
+            {
+                throw new Exception("User not found.");
+            }
+
+            List<UniSubjectDto> subjList = new List<UniSubjectDto>();
+
+            if (User.IsInRole("Professor"))
+            {
+                var prof = await _professorAppService.GetProfessorUserByAuthUserIdAsync(userId.Value);
+                var profSubjList = prof.ObjectList.ToList();
+                foreach (var professorUniSubjectse in profSubjList)
+                {
+                    var subject = await _subjectsAppService.GetSubjectByIdAsync(professorUniSubjectse.UniSubjectId);
+                    subjList.Add(ObjectMapper.Map<UniSubjectDto>(subject));
+                }
+            }
+            else
+            {
+                if (User.IsInRole("Student"))
+                {
+                    var stud = await _studentAppService.GetStudentUserByAuthUserIdAsync(userId.Value);
+                    var studSubjList = stud.ObjectList.ToList();
+
+                    foreach (var professorUniSubjectse in studSubjList)
+                    {
+                        var subject = await _subjectsAppService.GetSubjectByIdAsync(professorUniSubjectse.UniSubjectId);
+                        subjList.Add(ObjectMapper.Map<UniSubjectDto>(subject));
+                    }
+                }
+            }
+
+            return View("MySubjects", new MySubjectViewModel(subjList));
         }
         //public async Task<UniSubjectEditViewModel> Update(UniSubjectEditViewModel subject)
         //{

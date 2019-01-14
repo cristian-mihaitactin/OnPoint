@@ -1,0 +1,96 @@
+﻿@using Abp.Authorization.Users
+@model eMMA.Web.Models.UniSubjects.MySubjectViewModel
+
+@{
+    ViewData["Title"] = "MySubjects";
+}
+
+<h2>MySubjects</h2>
+@section scripts
+    {
+    <script src="~/view-resources/Views/Subjects/MySubjects.js" asp-append-version="true"></script>
+}
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    @L("Subjects")
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="body table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>@L("Title")</th>
+                            <th>@L("Credits")</th>
+                            <th>@L("Course  Count")</th>
+                            <th>@L("Seminar Count")</th>
+                            <th>@L("Lab Count")</th>
+                            <th>@L("Actions")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var subject in Model.Subjects)
+                        {
+                            <tr>
+                                <td>@subject.Title</td>
+                                <td>@subject.Credits</td>
+                                <td>@subject.Courses.Count</td>
+                                <td>@subject.Seminars.Count</td>
+                                <td>@subject.Labs.Count</td>
+
+                                @*<td class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">menu</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            @if (User.IsInRole("Admin"))
+                                            {
+                                                <li><a href="#" class="waves-effect waves-block edit-subject" data-subject-id="@subject.Id" data-toggle="modal" data-target="#EditSubjectModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                                <li><a href="#" class="waves-effect waves-block delete-subject" data-subject-id="@subject.Id" data-subject-name="@subject.Title"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                            }
+                                            @if (User.IsInRole("Professor"))
+                                            {
+                                                <li><a href="#" class="waves-effect waves-block assign-subject" data-subject-id="@subject.Id" data-subject-name="@subject.Title"><i class="material-icons">edit</i>@L("Assign")</a></li>
+                                            }
+                                        </ul>
+                                    </td>*@
+                                <td>
+                                    @if (User.IsInRole("Professor"))
+                                    {
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">menu</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="#" class="waves-effect waves-block add-subject-instance" data-subject-id="@subject.Id" data-target="#AddSubjectInstance"><i class="material-icons">edit</i>@L("Create instance")</a></li>
+                                        </ul>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="AddSubjectInstance" tabindex="-1" role="dialog" aria-labelledby="AddSubjectInstanceLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
