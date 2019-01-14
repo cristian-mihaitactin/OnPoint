@@ -65,14 +65,11 @@
                                     {
                                         <li><a href="#" class="waves-effect waves-block assign-subject" data-subject-id="@subject.Id" data-subject-name="@subject.Title"><i class="material-icons">edit</i>@L("Assign")</a></li>
                                     }
+                                    <li><a class="waves-effect waves-block delete-subject" asp-action="Details" asp-route-uniSubjectId="@subject.Id"><i class="material-icons">edit</i>@L("Details")</a></li>
+
                                 </ul>
                             </td>
                         </tr>
-                                        <li><a href="#" class="waves-effect waves-block delete-subject" data-subject-id="@subject.Id" ><i class="material-icons">edit</i>@L("Assign")</a></li>
-                                        <li><a class="waves-effect waves-block delete-subject" asp-action="Details" asp-route-uniSubjectId="@subject.Id"><i class="material-icons">edit</i>@L("Details")</a></li>
-                                    </ul>
-                                </td>
-                            </tr>
                         }
                     </tbody>
                 </table>
