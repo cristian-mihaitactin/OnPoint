@@ -149,5 +149,11 @@ namespace eMMA.Web.Controllers
 
         //    return new UniSubjectEditViewModel(subjectResult);
         //}
+        public async Task<ActionResult> Details(Guid uniSubjectId)
+        {
+            var subject = (await _subjectsAppService.GetSubjectByIdAsync(uniSubjectId));
+            var model = ObjectMapper.Map<UniSubjectDetailsViewModel>(subject);
+            return View(model);
+        }
     }
 }
