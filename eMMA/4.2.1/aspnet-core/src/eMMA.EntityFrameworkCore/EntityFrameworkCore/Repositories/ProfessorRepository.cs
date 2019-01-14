@@ -20,72 +20,151 @@ namespace eMMA.EntityFrameworkCore.Repositories
 
         public override Professor Insert(Professor entity)
         {
-            var dbEntity = _context.Professors.Add(entity);
-            dbEntity.State = EntityState.Added;
-            Save();
+            using (_context)
+            {
+                var dbEntity = _context.Professors.Add(entity);
+                dbEntity.State = EntityState.Added;
+                Save();
 
-            return dbEntity.Entity;
+                return dbEntity.Entity;
+            }
+            
         }
 
         public override async Task<Professor> InsertAsync(Professor entity)
         {
-            var dbEntity = await _context.Professors.AddAsync(entity);
-            dbEntity.State = EntityState.Added;
+            using (_context)
+            {
+                var dbEntity = await _context.Professors.AddAsync(entity);
+                dbEntity.State = EntityState.Added;
 
-            Save();
+                Save();
 
-            return dbEntity.Entity;
+                return dbEntity.Entity;
+            }
+            
         }
 
         public override void Delete(Professor entity)
         {
-            var dbEntity = _context.Professors.Remove(entity);
-            dbEntity.State = EntityState.Deleted;
-            Save();
+            using (_context)
+            {
+                var dbEntity = _context.Professors.Remove(entity);
+                dbEntity.State = EntityState.Deleted;
+                Save();
+            }
+            
         }
 
         public override Professor Update(Professor entity)
         {
-            var dbEntity = _context.Professors.Update(entity);
-            dbEntity.State = EntityState.Modified;
-            Save();
+            using (_context)
+            {
+                var dbEntity = _context.Professors.Update(entity);
+                dbEntity.State = EntityState.Modified;
+                Save();
 
-            return dbEntity.Entity;
+                var presentSubj = _context.ProfessorUniSubjects.Where(x => x.ProfessorId == entity.Id).OrderBy(s => s.UniSubjectId).ToList();
+
+                //Add
+                //if (entity.ObjectList.Count > 0)
+                //{
+                //    //add all
+                //    if (presentSubj.Count == 0)
+                //    {
+                //        foreach (var professorUniSubjectse in entity.ObjectList)
+                //        {
+                //            _context.ProfessorUniSubjects.Add(professorUniSubjectse);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        foreach (var professorUniSubjectse in entity.ObjectList)
+                //        {
+                //            if (presentSubj.SingleOrDefault(s => s.UniSubjectId == professorUniSubjectse.UniSubjectId) == null)
+                //            {
+                //                _context.ProfessorUniSubjects.Add(professorUniSubjectse);
+                //            }
+                //        }
+                //    }
+
+                //}
+
+                ////Remove
+                //foreach (var professorUniSubjectse in presentSubj)
+                //{
+                //    if (entity.ObjectList.SingleOrDefault(s => s.UniSubjectId == professorUniSubjectse.UniSubjectId) == null)
+                //    {
+                //        _context.ProfessorUniSubjects.Remove(professorUniSubjectse);
+                //    }
+                //}
+                Save();
+
+                return dbEntity.Entity;
+            }
         }
 
         public override List<Professor> GetAllList(Expression<Func<Professor, bool>> predicate)
         {
-            return _context.Professors.Where(predicate).ToList();
+            using (_context)
+            {
+                return _context.Professors.Where(predicate).ToList();
+
+            }
         }
 
         public override Task<List<Professor>> GetAllListAsync(Expression<Func<Professor, bool>> predicate)
         {
-            return _context.Professors.Where(predicate).ToListAsync();
+            using (_context)
+            {
+                return _context.Professors.Where(predicate).ToListAsync();
+
+            }
         }
 
         public override IQueryable<Professor> GetAll()
         {
-            return _context.Professors;
+            using (_context)
+            {
+                return _context.Professors;
+
+            }
         }
 
         public override Task<List<Professor>> GetAllListAsync()
         {
-            return _context.Professors.ToListAsync();
+            using (_context)
+            {
+                return _context.Professors.ToListAsync();
+
+            }
         }
 
         public override Professor Get(Guid profesorId)
         {
-            return _context.Professors.Find(profesorId);
+            using (_context)
+            {
+                return _context.Professors.Find(profesorId);
+
+            }
         }
 
         public override Task<Professor> GetAsync(Guid profesorId)
         {
-            return _context.Professors.FindAsync(profesorId);
+            using (_context)
+            {
+                return _context.Professors.FindAsync(profesorId);
+
+            }
         }
 
         public override void Save()
         {
-            _context.SaveChanges();
+            using (_context)
+            {
+                _context.SaveChanges();
+
+            }
         }
     }
 }

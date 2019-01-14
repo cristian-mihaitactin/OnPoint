@@ -16,6 +16,13 @@
 
             deleteSubject(subjectId, subjectName);
         });
+        
+        $('.assign-subject').click(function () {
+            var subjectId = $(this).attr("data-subject-id");
+            var subjectName = $(this).attr('data-subject-name');
+
+            assignSubject(subjectId, subjectName);
+        });
 
         $('.edit-subject').click(function (e) {
             var subjectId = $(this).attr("data-subject-id");
@@ -78,6 +85,25 @@
                             id: JSON.stringify(subjectId)
                         }*/subjectId).done(function () {
                             refreshSubjectList();
+                        });
+                    }
+                }
+            );
+        }
+        function assignSubject(subjectId, subjectName)
+        {
+            abp.message.confirm(
+                abp.utils.formatString(abp.localization.localize('AreYouSureWantToAssignTo', 'eMMA'), subjectName),
+                function (isConfirmed) {
+                    if (isConfirmed) {
+                        $.ajax({
+                            url: abp.appPath + 'Subjects/AssingSubject?subjectId=' + subjectId,
+                            type: 'POST',
+                            contentType: 'application/html',
+                            success: function () {
+                                refreshSubjectList();
+                            },
+                            error: function (e) { }
                         });
                     }
                 }

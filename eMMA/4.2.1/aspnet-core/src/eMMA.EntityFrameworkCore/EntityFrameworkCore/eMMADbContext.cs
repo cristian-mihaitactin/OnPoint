@@ -25,6 +25,9 @@ namespace eMMA.EntityFrameworkCore
         public DbSet<Attendance> Attendances { get; private set; }
         public DbSet<Mark> Marks { get; private set; }
         public DbSet<Homework> Homeworks { get; private set; }
+        public DbSet<ProfessorUniSubjects> ProfessorUniSubjects { get; private set; }
+        public DbSet<StudentUniSubjects> StudentUniSubjects { get; private set; }
+
 
         public eMMADbContext(DbContextOptions<eMMADbContext> options)
             : base(options)
@@ -42,6 +45,29 @@ namespace eMMA.EntityFrameworkCore
                 .HasMany(s => s.HomeworkList);
             modelBuilder.Entity<Student>()
                 .HasMany(s => s.MarkList);
+
+            modelBuilder.Entity<StudentUniSubjects>()
+                .HasKey(bc => new { bc.UniSubjectId, bc.StudentId});
+            modelBuilder.Entity<StudentUniSubjects>()
+                .HasOne(bc => bc.Student)
+                .WithMany(b => b.ObjectList)
+                .HasForeignKey(bc => bc.StudentId);
+            modelBuilder.Entity<StudentUniSubjects>()
+                .HasOne(bc => bc.UniSubject)
+                .WithMany(c => c.Students)
+                .HasForeignKey(bc => bc.UniSubjectId);
+
+            modelBuilder.Entity<ProfessorUniSubjects>()
+                .HasKey(bc => new { bc.UniSubjectId, bc.ProfessorId });
+            modelBuilder.Entity<ProfessorUniSubjects>()
+                .HasOne(bc => bc.Professor)
+                .WithMany(b => b.ObjectList)
+                .HasForeignKey(bc => bc.ProfessorId);
+            modelBuilder.Entity<ProfessorUniSubjects>()
+                .HasOne(bc => bc.UniSubject)
+                .WithMany(c => c.Professors)
+                .HasForeignKey(bc => bc.UniSubjectId);
+
             modelBuilder.Entity<UniSubject>()
                  .HasMany(s => s.Labs);
             modelBuilder.Entity<UniSubject>()

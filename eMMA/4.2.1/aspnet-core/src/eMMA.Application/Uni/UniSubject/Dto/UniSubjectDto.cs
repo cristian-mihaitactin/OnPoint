@@ -18,5 +18,7 @@ namespace eMMA.Uni.UniSubject.Dto
         public ICollection<SeminarInstance> Seminars { get; set; }
         public ICollection<CourseInstance> Courses { get; set; }
 
+        public ICollection<ProfessorUniSubjects> Professors { get; set; }
+        public ICollection<StudentUniSubjects> Students { get; set; }
     }
 }

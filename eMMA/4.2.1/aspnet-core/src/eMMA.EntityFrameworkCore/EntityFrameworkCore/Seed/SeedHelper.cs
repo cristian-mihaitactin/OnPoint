@@ -28,6 +28,7 @@ namespace eMMA.EntityFrameworkCore.Seed
             // Default tenant seed (in host database).
             new DefaultTenantBuilder(context).Create();
             new TenantRoleAndUserBuilder(context, 1).Create();
+
             new UniSubjectBuilder(context).Create();
         }
 

@@ -82,5 +82,11 @@ namespace eMMA.Uni.UniSubject
 
             return subject;
         }
+
+        public Task AssingSubject(Guid subjectId, long userId)
+        {
+            return null;
+        }
+
     }
 }

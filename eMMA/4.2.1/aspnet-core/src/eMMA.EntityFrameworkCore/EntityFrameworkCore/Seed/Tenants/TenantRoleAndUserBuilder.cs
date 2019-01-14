@@ -40,18 +40,20 @@ namespace eMMA.EntityFrameworkCore.Seed.Tenants
             }
 
             // Student and Professor roles
+            var studTenantId = _tenantId + 1;
+            var profTenantId = _tenantId + 2;
 
-            var studentRole = _context.Roles.IgnoreQueryFilters().FirstOrDefault(r => r.TenantId == _tenantId && r.Name == StaticRoleNames.Tenants.Student);
+            var studentRole = _context.Roles.IgnoreQueryFilters().FirstOrDefault(r => r.TenantId == studTenantId && r.Name == StaticRoleNames.Tenants.Student);
             if (studentRole == null)
             {
-                studentRole = _context.Roles.Add(new Role(_tenantId, StaticRoleNames.Tenants.Student, StaticRoleNames.Tenants.Student) { IsStatic = true }).Entity;
+                studentRole = _context.Roles.Add(new Role(studTenantId, StaticRoleNames.Tenants.Student, StaticRoleNames.Tenants.Student) { IsStatic = true }).Entity;
                 _context.SaveChanges();
             }
 
-            var professorRole = _context.Roles.IgnoreQueryFilters().FirstOrDefault(r => r.TenantId == _tenantId && r.Name == StaticRoleNames.Tenants.Professor);
+            var professorRole = _context.Roles.IgnoreQueryFilters().FirstOrDefault(r => r.TenantId == profTenantId && r.Name == StaticRoleNames.Tenants.Professor);
             if (professorRole == null)
             {
-                professorRole = _context.Roles.Add(new Role(_tenantId, StaticRoleNames.Tenants.Professor, StaticRoleNames.Tenants.Professor) { IsStatic = true }).Entity;
+                professorRole = _context.Roles.Add(new Role(profTenantId, StaticRoleNames.Tenants.Professor, StaticRoleNames.Tenants.Professor) { IsStatic = true }).Entity;
                 _context.SaveChanges();
             }
 
@@ -100,6 +102,49 @@ namespace eMMA.EntityFrameworkCore.Seed.Tenants
                 _context.UserRoles.Add(new UserRole(_tenantId, adminUser.Id, adminRole.Id));
                 _context.SaveChanges();
             }
+
+            /////////////////////////////////////////
+            ///             // Student and prof user
+
+            var studUser = _context.Users.IgnoreQueryFilters().FirstOrDefault(u => u.TenantId == studTenantId && u.UserName == "stud1");
+            if (studUser == null)
+            {
+                studUser = User.CreateTenantAdminUser(studTenantId, "stud1@defaulttenant.com");
+                studUser.UserName = "stud1";
+                studUser.Name = "First";
+                studUser.Surname = "Secondsur";
+
+                studUser.Password = new PasswordHasher<User>(new OptionsWrapper<PasswordHasherOptions>(new PasswordHasherOptions())).HashPassword(studUser, "123qwe");
+                studUser.IsEmailConfirmed = true;
+                studUser.IsActive = true;
+
+                _context.Users.Add(studUser);
+                _context.SaveChanges();
+
+                // Assign Admin role to admin user
+                _context.UserRoles.Add(new UserRole(studTenantId, studUser.Id, studentRole.Id));
+                _context.SaveChanges();
+            }
+
+            var profUser = _context.Users.IgnoreQueryFilters().FirstOrDefault(u => u.TenantId == profTenantId && u.UserName == "prof1");
+            if (profUser == null)
+            {
+                profUser = User.CreateTenantAdminUser(profTenantId, "prof1@defaulttenant.com");
+                profUser.UserName = "prof1";
+                profUser.Name = "Firstprof";
+                profUser.Surname = "Secondprof";
+
+                profUser.Password = new PasswordHasher<User>(new OptionsWrapper<PasswordHasherOptions>(new PasswordHasherOptions())).HashPassword(profUser, "123qwe");
+                profUser.IsEmailConfirmed = true;
+                profUser.IsActive = true;
+
+                _context.Users.Add(profUser);
+                _context.SaveChanges();
+
+                _context.UserRoles.Add(new UserRole(profTenantId, profUser.Id, professorRole.Id));
+                _context.SaveChanges();
+            }
+            /// /////////////////////////////////////
         }
     }
 }

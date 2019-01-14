@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,8 +15,10 @@ using Abp.Runtime.Session;
 using eMMA.Authorization;
 using eMMA.Authorization.Roles;
 using eMMA.Authorization.Users;
+using eMMA.Entities;
 using eMMA.Roles.Dto;
 using eMMA.Users.Dto;
+using User = eMMA.Authorization.Users.User;
 
 namespace eMMA.Users
 {
@@ -26,19 +29,25 @@ namespace eMMA.Users
         private readonly RoleManager _roleManager;
         private readonly IRepository<Role> _roleRepository;
         private readonly IPasswordHasher<User> _passwordHasher;
+        private readonly IRepository<Student, Guid> _studentsRepository;
+        private readonly IRepository<Professor, Guid> _profRepository;
 
         public UserAppService(
             IRepository<User, long> repository,
             UserManager userManager,
             RoleManager roleManager,
             IRepository<Role> roleRepository,
-            IPasswordHasher<User> passwordHasher)
+            IPasswordHasher<User> passwordHasher,
+            IRepository<Student, Guid> studentsRepository,
+            IRepository<Professor, Guid> profRepository)
             : base(repository)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _roleRepository = roleRepository;
             _passwordHasher = passwordHasher;
+            _studentsRepository = studentsRepository;
+            _profRepository = profRepository;
         }
 
         public override async Task<UserDto> Create(CreateUserDto input)
@@ -52,7 +61,14 @@ namespace eMMA.Users
 
             await _userManager.InitializeOptionsAsync(AbpSession.TenantId);
 
-            CheckErrors(await _userManager.CreateAsync(user, input.Password));
+            try
+            {
+                CheckErrors(await _userManager.CreateAsync(user, input.Password));
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
 
             if (input.RoleNames != null)
             {
@@ -60,6 +76,8 @@ namespace eMMA.Users
             }
 
             CurrentUnitOfWork.SaveChanges();
+
+            await CreateUniUser(input, user.Id);
 
             return MapToEntityDto(user);
         }
@@ -77,11 +95,73 @@ namespace eMMA.Users
             if (input.RoleNames != null)
             {
                 CheckErrors(await _userManager.SetRoles(user, input.RoleNames));
+                await CreateUniUser(input, user.Id);
             }
 
             return await Get(input);
         }
 
+        public async Task<Entities.User> CreateUniUser(UserDto input, long userId)
+        {
+            //also create students or profs
+            if ((input.RoleNames ?? throw new InvalidOperationException()).Contains("Student",StringComparer.InvariantCultureIgnoreCase))
+            {
+                return await _studentsRepository.InsertAsync(new Student()
+                {
+                    UserId = userId,
+                    FirstName = input.Name,
+                    Username = input.UserName,
+                    Email = input.EmailAddress,
+                    LastName = input.Surname,
+                    NrMatricol = Guid.NewGuid().ToString().Trim('-').Substring(0, 20),
+                });
+
+            }
+            if ((input.RoleNames ?? throw new InvalidOperationException()).Contains("Professor", StringComparer.InvariantCultureIgnoreCase))
+            {
+                return await _profRepository.InsertAsync(new Professor()
+                {
+                    UserId = userId,
+                    FirstName = input.Name,
+                    Username = input.UserName,
+                    Email = input.EmailAddress,
+                    LastName = input.Surname
+                });
+            }
+
+            return null;
+        }
+
+        public async Task<Entities.User> CreateUniUser(CreateUserDto input, long userId)
+        {
+            //also create students or profs
+            if ((input.RoleNames ?? throw new InvalidOperationException()).Contains("Student", StringComparer.InvariantCultureIgnoreCase))
+            {
+                return await _studentsRepository.InsertAsync(new Student()
+                {
+                    UserId = userId,
+                    FirstName = input.Name,
+                    Username = input.UserName,
+                    Email = input.EmailAddress,
+                    LastName = input.Surname,
+                    NrMatricol = Guid.NewGuid().ToString().Trim('-').Substring(0, 20),
+                });
+
+            }
+            if ((input.RoleNames ?? throw new InvalidOperationException()).Contains("Professor", StringComparer.InvariantCultureIgnoreCase))
+            {
+                return await _profRepository.InsertAsync(new Professor()
+                {
+                    UserId = userId,
+                    FirstName = input.Name,
+                    Username = input.UserName,
+                    Email = input.EmailAddress,
+                    LastName = input.Surname
+                });
+            }
+
+            return null;
+        }
         public override async Task Delete(EntityDto<long> input)
         {
             var user = await _userManager.GetUserByIdAsync(input.Id);
