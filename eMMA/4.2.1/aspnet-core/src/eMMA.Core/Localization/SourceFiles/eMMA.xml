@@ -97,5 +97,21 @@
     <text name="MySubjects">My Subjects</text>
     <text name="Assign">Assign</text>
     <text name="Details">Details</text>
+    <text name="InstanceType">Instance Type: </text>
+    <text name="Description">Description</text>
+    <text name="InstanceName">Instance Name</text>
+    <text name="InstanceDetails">Instance Details</text>
+    <text name="AddInstance">Add Instance</text>
+    <text name="Create instance">Create instance</text>
+    <text name="AsSeminar">Seminar</text>
+    <text name="AsLaboratory">Laboratory</text>
+    <text name="AsCourse">Course</text>
+
+    <text name="Title">Title</text>
+    <text name="Credits">Credits</text>
+    <text name="Course  Count">Course Count</text>
+    <text name="Seminar Count">Seminar Count</text>
+    <text name="Lab Count">Lab Count</text>
+    <text name="Subjects">Subjects</text>
   </texts>
 </localizationDictionary>
