@@ -9,9 +9,9 @@
     {
     <script src="~/view-resources/Views/Subjects/_AddInstanceModal.js" asp-append-version="true"></script>
 }
-@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("Add Instance")))
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("AddInstance")))
 
-<h2>AddSubjectInstanceModal</h2>
+@* <h2>Add Subject Instance</h2> *@
 
 <div class="modal-body">
     <form name="subjectInstanceCreateForm" role="form" novalidate class="form-validation">
@@ -42,12 +42,11 @@
                 </div>
                 <div class="row clearfix">
                     <div class="col-sm-12">
-                        <div class="form-group form-float">
-                            <div class="form-line">
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                                </label>
-                            </div>
+                        <div class="form-line">
+                            <label class="form-label">@L("InstanceType")</label>
+                            <button type="button" class="btn btn-primary waves-effect">@L("AsSeminar")</button>
+                            <button type="button" class="btn btn-primary waves-effect">@L("AsLaboratory")</button>
+                            <button type="button" class="btn btn-primary waves-effect">@L("AsCourse")</button>
                         </div>
                     </div>
                 </div>
