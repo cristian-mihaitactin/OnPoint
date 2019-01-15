@@ -152,7 +152,9 @@ namespace eMMA.Web.Controllers
         public async Task<ActionResult> Details(Guid uniSubjectId)
         {
             var subject = (await _subjectsAppService.GetSubjectByIdAsync(uniSubjectId));
-            var model = ObjectMapper.Map<UniSubjectDetailsViewModel>(subject);
+            var subjectDto = ObjectMapper.Map<UniSubjectDto>(subject);
+            var model = new UniSubjectViewModel(subjectDto);
+
             return View(model);
         }
     }
