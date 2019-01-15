@@ -6,9 +6,11 @@ namespace eMMA.Entities
 {
     public class Professor : User
     {
+        public ICollection<ProfessorUniSubjects> ObjectList { get; set; }
+
         public Professor()
         {
-            //EF Needs This
+            ObjectList = new List<ProfessorUniSubjects>();
         }
 
         public void ApproveAttendance(Student student)

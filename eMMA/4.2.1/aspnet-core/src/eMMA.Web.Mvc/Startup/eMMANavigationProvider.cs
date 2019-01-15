@@ -58,7 +58,7 @@ namespace eMMA.Web.Startup
                     new MenuItemDefinition(
                         PageNames.MySubjects,
                         L("MySubjects"),
-                        url: "MySubjects",
+                        url: "Subjects/MySubjects",
                         icon: "info"
                     //                        requiredPermissionName: PermissionNames.Pages_Roles
                     )

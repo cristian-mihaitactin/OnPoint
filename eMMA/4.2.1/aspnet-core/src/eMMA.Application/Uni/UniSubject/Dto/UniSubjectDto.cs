@@ -11,10 +11,13 @@ namespace eMMA.Uni.UniSubject.Dto
     {
         public string Title { get; set; }
         public int Credits { get; set; }
+        public string Description { get; set; }
 
         public ICollection<LaboratoryInstance> Labs { get; set; }
         public ICollection<SeminarInstance> Seminars { get; set; }
         public ICollection<CourseInstance> Courses { get; set; }
 
+        public ICollection<ProfessorUniSubjects> Professors { get; set; }
+        public ICollection<StudentUniSubjects> Students { get; set; }
     }
 }

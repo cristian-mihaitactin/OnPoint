@@ -1,10 +1,14 @@
 ﻿
+@using Abp.Authorization.Users
 @using eMMA.Web.Startup
 @model eMMA.Web.Models.UniSubjects.UniSubjectListViewModel
 @{
     ViewData["Title"] = "Subject";
 }
-
+@section scripts
+    {
+    <script src="~/view-resources/Views/Subjects/Index.js" asp-append-version="true"></script>
+}
 <h2>Subject</h2>
 
 <div class="row clearfix">
@@ -31,42 +35,111 @@
                         <tr>
                             <th>@L("Title")</th>
                             <th>@L("Credits")</th>
+                            <th>@L("Course  Count")</th>
+                            <th>@L("Seminar Count")</th>
+                            <th>@L("Lab Count")</th>
                             <th>@L("Actions")</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var subject in Model.UniSubjects)
                         {
-                            <tr>
-                                <td>@subject.Title</td>
-                                <td>@subject.Credits</td>
-                                <td class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">menu</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="#" class="waves-effect waves-block edit-subject" data-subject-id="@subject.Id" data-toggle="modal" data-target="#subjectEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                        <tr>
+                            <td>@subject.Title</td>
+                            <td>@subject.Credits</td>
+                            <td>@subject.CourseCount</td>
+                            <td>@subject.SeminarCount</td>
+                            <td>@subject.LabsCount</td>
+
+                            <td class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <li><a href="#" class="waves-effect waves-block edit-subject" data-subject-id="@subject.Id" data-toggle="modal" data-target="#EditSubjectModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
                                         <li><a href="#" class="waves-effect waves-block delete-subject" data-subject-id="@subject.Id" data-subject-name="@subject.Title"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
-                                        <li><a href="#" class="waves-effect waves-block delete-subject" data-subject-id="@subject.Id" ><i class="material-icons">edit</i>@L("Assign")</a></li>
-                                        <li><a class="waves-effect waves-block delete-subject" asp-action="Details" asp-route-uniSubjectId="@subject.Id"><i class="material-icons">edit</i>@L("Details")</a></li>
-                                    </ul>
-                                </td>
-                            </tr>
+                                    }
+                                    @if (User.IsInRole("Professor"))
+                                    {
+                                        <li><a href="#" class="waves-effect waves-block assign-subject" data-subject-id="@subject.Id" data-subject-name="@subject.Title"><i class="material-icons">edit</i>@L("Assign")</a></li>
+                                    }
+                                    <li><a class="waves-effect waves-block delete-subject" asp-action="Details" asp-route-uniSubjectId="@subject.Id"><i class="material-icons">edit</i>@L("Details")</a></li>
+
+                                </ul>
+                            </td>
+                        </tr>
                         }
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#UserCreateModal">
+                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#SubjectCreateModal">
                     <i class="material-icons">add</i>
                 </button>
             </div>
         </div>
     </div>
 </div>
+<div class="modal fade" id="SubjectCreateModal" tabindex="-1" role="dialog" aria-labelledby="SubjectCreateModalLabel" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <span>@L("CreateNewSubject")</span>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form name="subjectCreateForm" role="form" novalidate class="form-validation">
+                        <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                            <li role="presentation" class="active"><a href="#create-subject-details" data-toggle="tab">@L("SubjectDetails")</a></li>
+                        </ul>
+                        <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="create-user-details">
+                            <div class="row clearfix" style="margin-top:10px;">
+                                <div class="col-sm-12">
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input class="form-control" type="text" name="NewTitle" required maxlength="@AbpUserBase.MaxUserNameLength" minlength="2">
+                                            <label class="form-label">@L("SubjectName")</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="number" name="NewCredits" class="form-control" required>
+                                            <label class="form-label">@L("Credits")</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" name="NewDescription" class="form-control" required>
+                                            <label class="form-label">@L("Description")</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-@*<div class="modal fade" id="UserEditModal" tabindex="-1" role="dialog" aria-labelledby="UserEditModalLabel" data-backdrop="static">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                            <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+@*dassa*******************************************************************d*@
+<div class="modal fade" id="EditSubjectModal" tabindex="-1" role="dialog" aria-labelledby="EditSubjectModalLabel" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
 
         </div>
     </div>
-</div>*@
+</div>

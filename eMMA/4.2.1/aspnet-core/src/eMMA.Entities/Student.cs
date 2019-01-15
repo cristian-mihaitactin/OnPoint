@@ -10,6 +10,7 @@ namespace eMMA.Entities
         public ICollection<Mark> MarkList { get; private set; }
         public ICollection<Homework> HomeworkList { get; private set; }
         public ICollection<Attendance> AttendanceList { get; private set; }
+        public ICollection<StudentUniSubjects> ObjectList { get; set; }
 
         public Student()
         {

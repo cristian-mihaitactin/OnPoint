@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using eMMA.EntityFrameworkCore.Repositories;
 using Abp.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 
 namespace eMMA.Uni.UniSubject
 {
@@ -40,6 +42,34 @@ namespace eMMA.Uni.UniSubject
             return GetEntityByIdAsync(id);
         }
 
+        [HttpPut]
+        public async Task<UniSubjectDto> Create(UniSubjectDto subjectDto)
+        {
+            var subjectEntity = ObjectMapper.Map<Entities.UniSubject>(subjectDto);
+
+            var result = await Repository.InsertAsync(subjectEntity);
+
+            return ObjectMapper.Map<UniSubjectDto>(result);
+        }
+
+        [HttpPost]
+        public UniSubjectDto Update(UniSubjectDto subjectDto)
+        {
+            var subjectEntity = ObjectMapper.Map<Entities.UniSubject>(subjectDto);
+
+            var result = Repository.Update(subjectEntity);
+
+            return ObjectMapper.Map<UniSubjectDto>(result);
+        }
+
+        [HttpDelete]
+        [Route("api/services/app/UniSubject/Delete/{id}")]
+        public void Delete(string id)
+        {
+            var subjectId = new Guid(id);
+
+            Repository.Delete(subjectId);
+        }
 
         protected override async Task<Entities.UniSubject> GetEntityByIdAsync(Guid id)
         {
@@ -52,5 +82,11 @@ namespace eMMA.Uni.UniSubject
 
             return subject;
         }
+
+        public Task AssingSubject(Guid subjectId, long userId)
+        {
+            return null;
+        }
+
     }
 }

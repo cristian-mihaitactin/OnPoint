@@ -10,5 +10,8 @@ namespace eMMA.Uni.UniSubject
     {
         Task<ListResultDto<UniSubjectDto>> GetAllUniSubjects();
         Task<Entities.UniSubject> GetSubjectByIdAsync(Guid id);
+        UniSubjectDto Update(UniSubjectDto subjectDto);
+
+        Task AssingSubject(Guid subjectId, long userId);
     }
 }
