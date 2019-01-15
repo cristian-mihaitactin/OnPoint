@@ -157,5 +157,20 @@ namespace eMMA.Web.Controllers
 
             return View(model);
         }
+
+        public async Task<ActionResult> AddInstancePop(Guid subjectId)
+        {
+            var userId = User.Identity.GetUserId();
+            var prof = await _professorAppService.GetProfessorUserByAuthUserIdAsync(userId.Value);
+
+            var model = new CreateSubjectInstanceModel()
+            {
+                SubjectId = subjectId,
+                ProfId = prof.Id
+            };
+
+            //return View("_AddSubjectInstanceModal", model);
+            return View("_AddInstanceModal", model);
+        }
     }
 }

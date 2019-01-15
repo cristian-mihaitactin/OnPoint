@@ -18,6 +18,10 @@ namespace eMMA.Web.Models.UniSubjects
         public ICollection<SeminarInstance> Seminars { get; set; }
         public ICollection<CourseInstance> Courses { get; set; }
 
+        public UniSubjectViewModel()
+        {
+        }
+
         public UniSubjectViewModel(UniSubjectDto dto)
         {
             Id = dto.Id;

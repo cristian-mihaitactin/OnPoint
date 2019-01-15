@@ -8,6 +8,8 @@ namespace eMMA.Web.Models.UniSubjects
     public class CreateSubjectInstanceModel
     {
         public string Name { get; set; }
+        public string Desciption { get; set; }
+
         public Guid SubjectId { get; set; }
         public Guid ProfId { get; set; }
 
