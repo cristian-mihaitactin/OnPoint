@@ -7,10 +7,8 @@ using eMMA.Uni.UniSubject;
 using eMMA.Web.Models.UniSubjects;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using Abp.Application.Services.Dto;
 using Abp.Runtime.Security;
 using eMMA.Uni.UniSubject.Dto;
-using eMMA.Users;
 using eMMA.Entities;
 using eMMA.Uni.Professor;
 using eMMA.Uni.Professor.Dto;
@@ -35,6 +33,7 @@ namespace eMMA.Web.Controllers
             _professorAppService = professorAppService;
             _studentAppService = studentAppService;
         }
+
         public async Task<ActionResult> Index()
         {
             var subjects = (await _subjectsAppService.GetAllUniSubjects()).Items;
@@ -156,21 +155,6 @@ namespace eMMA.Web.Controllers
             var model = new UniSubjectViewModel(subjectDto);
 
             return View(model);
-        }
-
-        public async Task<ActionResult> AddInstancePop(Guid subjectId)
-        {
-            var userId = User.Identity.GetUserId();
-            var prof = await _professorAppService.GetProfessorUserByAuthUserIdAsync(userId.Value);
-
-            var model = new CreateSubjectInstanceModel()
-            {
-                SubjectId = subjectId,
-                ProfId = prof.Id
-            };
-
-            //return View("_AddSubjectInstanceModal", model);
-            return View("_AddInstanceModal", model);
         }
     }
 }

@@ -1,20 +1,22 @@
-﻿@using Abp.Authorization.Users
-@using eMMA.Web.Startup
-@using eMMA.Web.Models.Common.Modals
-@model eMMA.Web.Models.UniSubjects.CreateSubjectInstanceModel
+﻿@using eMMA.Web.Models.Common.Modals
+@model eMMA.Web.Models.Instances.CreateSubjectInstanceModel
 @{
     Layout = null;
 }
-@section scripts
+@*@section scripts
     {
     <script src="~/view-resources/Views/Subjects/_AddInstanceModal.js" asp-append-version="true"></script>
-}
+}*@
+<script src="~/view-resources/Views/Instances/_AddInstanceModal.js" asp-append-version="true"></script>
 @Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("AddInstance")))
 
 @* <h2>Add Subject Instance</h2> *@
 
 <div class="modal-body">
     <form name="subjectInstanceCreateForm" role="form" novalidate class="form-validation">
+        <input type="hidden" id="instance-subj-id" name="SubjectId" value="@Model.SubjectId" />
+        <input type="hidden" id="instance-prof-id" name="ProfId" value="@Model.ProfId" />
+
         <ul class="nav nav-tabs tab-nav-right" role="tablist">
             <li role="presentation" class="active"><a href="#create-instance-details" data-toggle="tab">@L("InstanceDetails")</a></li>
         </ul>
@@ -24,8 +26,8 @@
                     <div class="col-sm-12">
                         <div class="form-group form-float">
                             <div class="form-line">
-                                <input class="form-control" type="text" name="Name" required minlength="2">
-                                <label class="form-label">@L("InstanceName")</label>
+                                <label for="instance-name">@L("InstanceName")</label>
+                                <input id="instance-name" type="text" name="Name" required minlength="2" class="validate form-control" required maxlength="32" minlength="2">
                             </div>
                         </div>
                     </div>
@@ -34,8 +36,8 @@
                     <div class="col-sm-12">
                         <div class="form-group form-float">
                             <div class="form-line">
-                                <input type="text" name="Description" class="form-control" required>
-                                <label class="form-label">@L("Description")</label>
+                                <label for="instance-description">@L("Description")</label>
+                                <input id="instance-description" type="text" name="Description" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -44,9 +46,9 @@
                     <div class="col-sm-12">
                         <div class="form-line">
                             <label class="form-label">@L("InstanceType")</label>
-                            <button type="button" class="btn btn-primary waves-effect">@L("AsSeminar")</button>
-                            <button type="button" class="btn btn-primary waves-effect">@L("AsLaboratory")</button>
-                            <button type="button" class="btn btn-primary waves-effect">@L("AsCourse")</button>
+                            <button type="button" data-subject-type="Course" class="btn btn-primary waves-effect save-button">@L("AsCourse")</button>
+                            <button id="btn-asSeminar" data-subject-type="Seminar" type="button" class="btn btn-primary waves-effect save-button">@L("AsSeminar")</button>
+                            <button type="button" data-subject-type="Lab" class="btn btn-primary waves-effect save-button">@L("AsLaboratory")</button>
                         </div>
                     </div>
                 </div>
@@ -54,6 +56,3 @@
         </div>
     </form>
 </div>
-
-
-@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")

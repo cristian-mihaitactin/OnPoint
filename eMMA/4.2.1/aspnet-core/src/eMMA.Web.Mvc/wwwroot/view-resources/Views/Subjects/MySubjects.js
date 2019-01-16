@@ -13,7 +13,7 @@
 
             e.preventDefault();
             $.ajax({
-                url: window.location.origin + '/Subjects/AddInstancePop?subjectId=' + subjectId,
+                url: window.location.origin + '/Instances/AddInstancePop?subjectId=' + subjectId,
                 type: 'POST',
                 contentType: 'application/html',
                 success: function (content) {

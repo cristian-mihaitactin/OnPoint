@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace eMMA.DeploySteps
+﻿namespace eMMA.DeploySteps
 {
     public class Class1
     {
