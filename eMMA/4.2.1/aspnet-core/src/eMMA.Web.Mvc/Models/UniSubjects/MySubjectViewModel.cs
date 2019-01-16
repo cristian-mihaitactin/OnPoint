@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using eMMA.Entities;
+﻿using System.Collections.Generic;
 using eMMA.Uni.UniSubject.Dto;
 
 namespace eMMA.Web.Models.UniSubjects

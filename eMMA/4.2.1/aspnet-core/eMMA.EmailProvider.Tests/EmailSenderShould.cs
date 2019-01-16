@@ -2,8 +2,6 @@ using Microsoft.Extensions.Options;
 using Moq;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using System;
-using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 using Microsoft.Extensions.Configuration;

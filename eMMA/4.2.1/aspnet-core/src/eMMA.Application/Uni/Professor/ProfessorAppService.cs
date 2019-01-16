@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
 using eMMA.Entities;
 using eMMA.Uni.Professor.Dto;
-using eMMA.Uni.UniSubject;
-using eMMA.Uni.UniSubject.Dto;
 
 namespace eMMA.Uni.Professor
 {

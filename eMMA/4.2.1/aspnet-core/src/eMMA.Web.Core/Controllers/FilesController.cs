@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using eMMA.Controllers;
 using eMMA.EntityFrameworkCore.Repositories;
 using eMMA.Entities;
 using Microsoft.AspNetCore.Mvc;

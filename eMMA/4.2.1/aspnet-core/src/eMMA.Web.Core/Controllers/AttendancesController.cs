@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using eMMA.Controllers;
 using eMMA.EntityFrameworkCore.Repositories;
 using eMMA.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +19,7 @@ namespace eMMA.Controllers
         [HttpGet]
         public Attendance GetAttendance(Guid id)
         {
-            var attendance = _attendanceRepository.FindBy(a => a.AttendanceId == id).FirstOrDefault();
+            var attendance = _attendanceRepository.FindBy(a => a.Id == id).FirstOrDefault();
             return attendance;
         }
 
@@ -43,7 +40,7 @@ namespace eMMA.Controllers
         [HttpDelete]
         public void DeleteAttendance(Guid id)
         {
-            var attendance = _attendanceRepository.FindBy(a => a.AttendanceId == id).FirstOrDefault();
+            var attendance = _attendanceRepository.FindBy(a => a.Id == id).FirstOrDefault();
             _attendanceRepository.Delete(attendance);
             _attendanceRepository.Save();
         }

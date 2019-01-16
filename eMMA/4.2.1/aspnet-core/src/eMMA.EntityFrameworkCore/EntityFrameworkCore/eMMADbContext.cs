@@ -1,12 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Abp.Zero.EntityFrameworkCore;
 using eMMA.Authorization.Roles;
-using eMMA.Authorization.Users;
 using eMMA.MultiTenancy;
 using eMMA.Entities;
 using User = eMMA.Authorization.Users.User;
-using Abp.Domain.Repositories;
-using eMMA.EntityFrameworkCore.Repositories;
 
 namespace eMMA.EntityFrameworkCore
 {
